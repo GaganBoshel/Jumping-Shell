@@ -219,47 +219,108 @@
     #touch-controls {
       display: none;
       width: 100%;
-      max-width: 960px;
+      max-width: 620px;
       justify-content: space-between;
-      align-items: center;
-      z-index: 30;
+      align-items: flex-end;
+      z-index: 40;
       pointer-events: none;
-      margin-top: 10px;
-      padding: 0 12px;
+      box-sizing: border-box;
     }
 
-    /* Show on touch devices or when toggled */
+    /* Automatically show controls on mobile & tablet viewports, touch devices, or when toggled */
+    @media (max-width: 1024px) {
+      #touch-controls {
+        display: flex !important;
+      }
+    }
+    @media (max-height: 560px) {
+      #touch-controls {
+        display: flex !important;
+      }
+    }
+    @media (pointer: coarse) {
+      #touch-controls {
+        display: flex !important;
+      }
+    }
     body.has-touch #touch-controls,
     body.touch-enabled #touch-controls {
-      display: flex;
+      display: flex !important;
     }
 
-    @media (orientation: landscape) and (max-height: 540px) {
-      #touch-controls {
-        position: absolute;
-        bottom: 8px;
-        left: env(safe-area-inset-left, 8px);
-        right: env(safe-area-inset-right, 8px);
-        max-width: none;
-        margin-top: 0;
-        padding: 0;
+    /* Portrait: touch controls sit in natural bottom thumb area */
+    @media (orientation: portrait) {
+      #touch-controls,
+      body.has-touch #touch-controls,
+      body.touch-enabled #touch-controls {
+        position: relative;
+        margin-top: auto;
+        margin-bottom: max(8px, env(safe-area-inset-bottom, 8px));
+        padding: 0 16px;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: flex-end;
       }
+    }
+
+    /* Landscape on mobile & tablet: float controls at bottom-left and bottom-right corners */
+    @media (orientation: landscape) {
+      #touch-controls,
+      body.has-touch #touch-controls,
+      body.touch-enabled #touch-controls {
+        position: absolute;
+        bottom: max(10px, env(safe-area-inset-bottom, 10px));
+        left: max(14px, env(safe-area-inset-left, 14px));
+        right: max(14px, env(safe-area-inset-right, 14px));
+        width: auto;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 40;
+      }
+    }
+
+    .touch-cluster-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      pointer-events: auto;
+    }
+
+    .cluster-badge {
+      font-size: 8.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #94a3b8;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 2px 8px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      user-select: none;
+      -webkit-user-select: none;
+      line-height: 1.1;
     }
 
     .touch-cluster {
       display: flex;
       gap: 10px;
       pointer-events: auto;
+      align-items: flex-end;
     }
 
     .touch-btn {
-      width: 54px;
-      height: 54px;
-      border-radius: 14px;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
       background: rgba(15, 23, 42, 0.88);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1.5px solid rgba(255, 255, 255, 0.22);
       color: #ffffff;
       font-size: 16px;
       font-weight: bold;
@@ -267,38 +328,89 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
       cursor: pointer;
       user-select: none;
       -webkit-user-select: none;
       touch-action: none;
-      transition: transform 0.08s ease, background 0.08s ease;
+      -webkit-touch-callout: none;
+      transition: transform 0.08s ease, background 0.08s ease, border-color 0.08s ease, filter 0.08s ease;
+      position: relative;
+    }
+
+    .touch-btn .ico {
+      font-size: 18px;
+      line-height: 1;
+      pointer-events: none;
     }
 
     .touch-btn span.sub {
-      font-size: 9px;
+      font-size: 8px;
       color: #cbd5e1;
-      font-weight: 600;
-      margin-top: 1px;
-      letter-spacing: 0.3px;
+      font-weight: 700;
+      margin-top: 2px;
+      letter-spacing: 0.4px;
+      pointer-events: none;
+      text-transform: uppercase;
     }
 
     .touch-btn:active, .touch-btn.active {
       transform: scale(0.92);
-      filter: brightness(1.2);
+      filter: brightness(1.25);
     }
 
-    .touch-btn.btn-jump {
-      background: rgba(2, 132, 199, 0.88);
+    /* Move buttons (Left / Right) */
+    .touch-btn.btn-move {
+      background: rgba(30, 41, 59, 0.9);
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+    .touch-btn.btn-move:active, .touch-btn.btn-move.active {
+      background: rgba(51, 65, 85, 0.95);
       border-color: #38bdf8;
     }
-    .touch-btn.btn-eject {
-      background: rgba(234, 88, 12, 0.88);
-      border-color: #fb923c;
+
+    /* Jump / Boost button */
+    .touch-btn.btn-jump {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.95), rgba(3, 105, 161, 0.95));
+      border-color: #38bdf8;
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45);
+      width: 62px;
+      height: 62px;
     }
+    .touch-btn.btn-jump span.sub {
+      color: #e0f2fe;
+    }
+    .touch-btn.btn-jump:active, .touch-btn.btn-jump.active {
+      background: linear-gradient(135deg, rgba(3, 105, 161, 1), rgba(2, 132, 199, 1));
+      border-color: #7dd3fc;
+    }
+
+    /* Eject Shell button */
+    .touch-btn.btn-eject {
+      background: linear-gradient(135deg, rgba(234, 88, 12, 0.95), rgba(194, 65, 12, 0.95));
+      border-color: #fb923c;
+      box-shadow: 0 6px 20px rgba(234, 88, 12, 0.45);
+    }
+    .touch-btn.btn-eject span.sub {
+      color: #ffedd5;
+    }
+    .touch-btn.btn-eject:active, .touch-btn.btn-eject.active {
+      background: linear-gradient(135deg, rgba(194, 65, 12, 1), rgba(234, 88, 12, 1));
+      border-color: #fdba74;
+    }
+
+    /* Recall Shells button */
     .touch-btn.btn-recall {
-      background: rgba(124, 58, 237, 0.88);
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.92), rgba(109, 40, 217, 0.92));
       border-color: #c084fc;
+      box-shadow: 0 6px 20px rgba(124, 58, 237, 0.45);
+    }
+    .touch-btn.btn-recall span.sub {
+      color: #f3e8ff;
+    }
+    .touch-btn.btn-recall:active, .touch-btn.btn-recall.active {
+      background: linear-gradient(135deg, rgba(109, 40, 217, 1), rgba(124, 58, 237, 1));
+      border-color: #e9d5ff;
     }
 
     /* Level Select Modal */
@@ -327,6 +439,10 @@
       width: 100%;
       max-width: 480px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+      max-height: 88vh;
+      max-height: 88dvh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     .modal-header {
@@ -462,12 +578,42 @@
       color: #fca5a5;
     }
 
-    /* Small Screen Adaptive Overrides */
-    @media (max-width: 600px) {
+    /* Tablet Screen Optimizations (iPads, Android tablets, surface) */
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .touch-btn {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+      }
+      .touch-btn.btn-jump {
+        width: 70px;
+        height: 70px;
+      }
+      .touch-btn .ico {
+        font-size: 22px;
+      }
+      .touch-btn span.sub {
+        font-size: 9px;
+      }
+      .touch-cluster {
+        gap: 12px;
+      }
+      .cluster-badge {
+        font-size: 9.5px;
+        padding: 2px 10px;
+      }
+      .hud-btn {
+        padding: 5px 9px;
+        font-size: 12px;
+      }
+    }
+
+    /* Small Screen Adaptive Overrides (Smartphones) */
+    @media (max-width: 640px) {
       .hud-card {
-        padding: 4px 8px;
+        padding: 4px 6px;
         font-size: 11px;
-        gap: 5px;
+        gap: 4px;
       }
       .hud-card#level-badge {
         max-width: 140px;
@@ -480,22 +626,96 @@
         height: 10px;
       }
       .hud-btn {
-        padding: 3px 6px;
+        padding: 3px 5px;
         font-size: 10px;
       }
+      .hud-btn .btn-label-text {
+        display: none;
+      }
+      #btn-recall {
+        display: none;
+      }
       #banner-hint {
-        font-size: 11px;
-        padding: 4px 10px;
-        bottom: 8px;
+        font-size: 10.5px;
+        padding: 3px 10px;
+        bottom: 6px;
+        max-width: 95%;
       }
       .touch-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 14px;
+      }
+      .touch-btn.btn-jump {
+        width: 55px;
+        height: 55px;
+      }
+      .touch-btn .ico {
+        font-size: 16px;
+      }
+      .touch-btn span.sub {
+        font-size: 7.5px;
+      }
+      .touch-cluster {
+        gap: 6px;
+      }
+      .cluster-badge {
+        font-size: 7.5px;
+        padding: 1px 6px;
+      }
+      #touch-controls {
+        padding: 0 8px;
+      }
+      .level-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .modal-card {
+        padding: 14px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .touch-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+      }
+      .touch-btn.btn-jump {
         width: 48px;
         height: 48px;
-        border-radius: 12px;
+      }
+      .touch-btn .ico {
         font-size: 14px;
       }
       .touch-btn span.sub {
-        font-size: 8px;
+        font-size: 7px;
+      }
+      .touch-cluster {
+        gap: 4px;
+      }
+      #touch-controls {
+        padding: 0 4px;
+      }
+    }
+
+    @media (max-height: 460px) and (orientation: landscape) {
+      #banner-hint {
+        font-size: 9px;
+        padding: 2px 8px;
+        bottom: 4px;
+      }
+      .touch-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+      }
+      .touch-btn.btn-jump {
+        width: 50px;
+        height: 50px;
+      }
+      .cluster-badge {
+        display: none;
       }
     }
   </style>
@@ -533,7 +753,7 @@
           <span>E</span> Recall
         </button>
         <button class="hud-btn" id="btn-restart" title="Restart Level (Backspace)">
-          ↺ Restart
+          ↺<span class="btn-label-text"> Restart</span>
         </button>
         <button class="hud-btn" id="btn-toggle-touch" title="Toggle Virtual Touch Gamepad">
           🎮
@@ -551,15 +771,39 @@
   </div>
 
   <!-- Touch Controls for mobile & tablet users -->
-  <div id="touch-controls">
-    <div class="touch-cluster">
-      <button class="touch-btn" id="btn-left" aria-label="Left">◀<span class="sub">LEFT</span></button>
-      <button class="touch-btn" id="btn-right" aria-label="Right">▶<span class="sub">RIGHT</span></button>
+  <div id="touch-controls" role="region" aria-label="Game Controller">
+    <!-- Left Move Cluster (Move Left and Right) -->
+    <div class="touch-cluster-wrapper">
+      <span class="cluster-badge">MOVE</span>
+      <div class="touch-cluster" id="left-dpad">
+        <button class="touch-btn btn-move" id="btn-left" aria-label="Move Left" title="Move Left">
+          <span class="ico">◀</span>
+          <span class="sub">LEFT</span>
+        </button>
+        <button class="touch-btn btn-move" id="btn-right" aria-label="Move Right" title="Move Right">
+          <span class="ico">▶</span>
+          <span class="sub">RIGHT</span>
+        </button>
+      </div>
     </div>
-    <div class="touch-cluster">
-      <button class="touch-btn btn-recall" id="btn-touch-recall" aria-label="Recall Shells">🧲<span class="sub">RECALL</span></button>
-      <button class="touch-btn btn-eject" id="btn-eject" aria-label="Eject Shell">⬇<span class="sub">EJECT</span></button>
-      <button class="touch-btn btn-jump" id="btn-jump" aria-label="Jump">▲<span class="sub">JUMP</span></button>
+
+    <!-- Right Actions Cluster (Recall, Eject Shell, Jump) -->
+    <div class="touch-cluster-wrapper">
+      <span class="cluster-badge">ACTIONS</span>
+      <div class="touch-cluster" id="right-actions">
+        <button class="touch-btn btn-recall" id="btn-touch-recall" aria-label="Recall Shells" title="Recall Shells (E / R)">
+          <span class="ico">🧲</span>
+          <span class="sub">RECALL</span>
+        </button>
+        <button class="touch-btn btn-eject" id="btn-eject" aria-label="Eject Shell" title="Eject Shell (Drop Block & Boost)">
+          <span class="ico">⏏</span>
+          <span class="sub">EJECT</span>
+        </button>
+        <button class="touch-btn btn-jump" id="btn-jump" aria-label="Jump / Boost" title="Jump / Mid-Air Boost">
+          <span class="ico">▲</span>
+          <span class="sub">JUMP</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -1452,10 +1696,17 @@
       this.victoryScreen = false;
       this.totalTime = 0;
 
+      window.gameInstance = this;
       this.initInput();
       this.loadLevel(initialLevel);
       this.resizeCanvas();
       window.addEventListener('resize', () => this.resizeCanvas());
+      window.addEventListener('orientationchange', () => {
+        setTimeout(() => this.resizeCanvas(), 100);
+      });
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', () => this.resizeCanvas());
+      }
 
       this.loop = this.loop.bind(this);
       requestAnimationFrame(this.loop);
@@ -1522,32 +1773,44 @@
     }
 
     resizeCanvas() {
-      const isPortrait = window.innerHeight > window.innerWidth;
-      const isTouchVisible = document.body.classList.contains('has-touch') || document.body.classList.contains('touch-enabled');
+      // Use visualViewport if available for true visible screen dimensions on mobile browsers
+      const vpW = (window.visualViewport ? window.visualViewport.width : window.innerWidth) || window.innerWidth;
+      const vpH = (window.visualViewport ? window.visualViewport.height : window.innerHeight) || window.innerHeight;
 
-      // Adaptive padding calculations
-      let reservedW = 16;
-      let reservedH = 16;
+      const isPortrait = vpH > vpW;
+      const isTouch = document.body.classList.contains('has-touch') ||
+        document.body.classList.contains('touch-enabled') ||
+        (vpW <= 1024) ||
+        (vpH <= 560);
 
-      if (isTouchVisible) {
-        if (isPortrait) {
-          // Reserve space for top HUD (~44px) + touch controls (~100px) + hint (~32px)
-          reservedH += 175;
-          reservedW += 16;
-        } else {
-          // In landscape: touch controls sit in margins or bottom overlay
-          reservedW += 24;
-          reservedH += 72;
-        }
+      if (isPortrait) {
+        document.body.classList.add('is-portrait');
+        document.body.classList.remove('is-landscape');
       } else {
-        reservedH += 56;
+        document.body.classList.add('is-landscape');
+        document.body.classList.remove('is-portrait');
       }
 
-      const availW = Math.max(260, window.innerWidth - reservedW);
-      const availH = Math.max(160, window.innerHeight - reservedH);
+      let maxW, maxH;
+
+      if (isPortrait) {
+        // In portrait: reserve vertical space for HUD, header, and bottom touch controls
+        // For tablets (vpH >= 900): ~175px, for mobile: ~155px
+        const reservedH = isTouch ? (vpH >= 900 ? 175 : 155) : 64;
+        maxW = Math.max(260, vpW - 20);
+        maxH = Math.max(160, vpH - reservedH);
+      } else {
+        // In landscape: controls float in the bottom corners
+        // Tablet landscape (vpW >= 900): keep comfortable clearance for thumbs
+        const reservedH = isTouch ? (vpH <= 500 ? 24 : 56) : 48;
+        const reservedW = isTouch ? (vpW >= 900 ? 150 : 32) : 16;
+
+        maxW = Math.max(260, vpW - reservedW);
+        maxH = Math.max(160, vpH - reservedH);
+      }
 
       // Scale to fit 960x540 preserving aspect ratio
-      const scale = Math.min(availW / CANVAS_WIDTH, availH / CANVAS_HEIGHT);
+      const scale = Math.min(maxW / CANVAS_WIDTH, maxH / CANVAS_HEIGHT);
 
       const targetW = Math.floor(CANVAS_WIDTH * scale);
       const targetH = Math.floor(CANVAS_HEIGHT * scale);
@@ -1640,7 +1903,20 @@
       const nameElem = document.getElementById('level-name');
       if (nameElem) nameElem.textContent = lvl.name;
       const hintElem = document.getElementById('banner-hint');
-      if (hintElem) hintElem.innerHTML = lvl.hint;
+      if (hintElem) {
+        const isTouch = document.body.classList.contains('has-touch') || document.body.classList.contains('touch-enabled');
+        if (isTouch) {
+          let touchHint = lvl.hint
+            .replace(/\[W\] or \[SPACE\]/g, '▲ JUMP')
+            .replace(/\[SPACE\]/g, '▲ JUMP / ⬇ EJECT')
+            .replace(/\[E\] or \[R\]/g, '🧲 RECALL')
+            .replace(/\[E\] \/ \[R\]/g, '🧲 RECALL')
+            .replace(/\[W\]/g, '▲ JUMP');
+          hintElem.innerHTML = touchHint;
+        } else {
+          hintElem.innerHTML = lvl.hint;
+        }
+      }
 
       this.updateLevelModal();
       this.updateNavButtons();
@@ -1664,11 +1940,23 @@
     }
 
     initInput() {
-      // Auto-detect touch capability
-      const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || window.matchMedia('(pointer: coarse)').matches;
-      if (isTouchDevice) {
+      // Auto-detect touch capability and mobile/tablet screens
+      const checkTouchDevice = () => {
+        const isTouch = ('ontouchstart' in window) ||
+          (navigator.maxTouchPoints > 0) ||
+          window.matchMedia('(pointer: coarse)').matches ||
+          window.matchMedia('(max-width: 1024px)').matches ||
+          window.innerWidth <= 1024;
+        if (isTouch) {
+          document.body.classList.add('has-touch');
+        }
+      };
+      checkTouchDevice();
+      window.addEventListener('resize', checkTouchDevice);
+      window.addEventListener('touchstart', () => {
         document.body.classList.add('has-touch');
-      }
+        this.resizeCanvas();
+      }, { once: true, passive: true });
 
       this.updateLevelModal();
 
@@ -1831,18 +2119,106 @@
         btn.addEventListener('mouseleave', handleEnd);
       };
 
-      bindTouch('btn-left', () => { this.keys.left = true; }, () => { this.keys.left = false; });
-      bindTouch('btn-right', () => { this.keys.right = true; }, () => { this.keys.right = false; });
+      // Fluid sliding D-Pad for Left / Right touch movement
+      const dpad = document.getElementById('left-dpad');
+      const btnLeft = document.getElementById('btn-left');
+      const btnRight = document.getElementById('btn-right');
+
+      if (dpad && btnLeft && btnRight) {
+        let dpadTouchId = null;
+
+        const updateDpadFromX = (clientX) => {
+          const rectL = btnLeft.getBoundingClientRect();
+          const rectR = btnRight.getBoundingClientRect();
+          const midX = (rectL.right + rectR.left) / 2;
+
+          if (clientX < midX) {
+            this.keys.left = true;
+            this.keys.right = false;
+            btnLeft.classList.add('active');
+            btnRight.classList.remove('active');
+          } else {
+            this.keys.left = false;
+            this.keys.right = true;
+            btnRight.classList.add('active');
+            btnLeft.classList.remove('active');
+          }
+        };
+
+        dpad.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          sfx.init();
+          for (let i = 0; i < e.changedTouches.length; i++) {
+            const t = e.changedTouches[i];
+            if (dpadTouchId === null) {
+              dpadTouchId = t.identifier;
+              updateDpadFromX(t.clientX);
+              break;
+            }
+          }
+        }, { passive: false });
+
+        dpad.addEventListener('touchmove', (e) => {
+          e.preventDefault();
+          for (let i = 0; i < e.changedTouches.length; i++) {
+            const t = e.changedTouches[i];
+            if (t.identifier === dpadTouchId) {
+              updateDpadFromX(t.clientX);
+              break;
+            }
+          }
+        }, { passive: false });
+
+        const onDpadEnd = (e) => {
+          for (let i = 0; i < e.changedTouches.length; i++) {
+            const t = e.changedTouches[i];
+            if (t.identifier === dpadTouchId) {
+              dpadTouchId = null;
+              this.keys.left = false;
+              this.keys.right = false;
+              btnLeft.classList.remove('active');
+              btnRight.classList.remove('active');
+              break;
+            }
+          }
+        };
+
+        dpad.addEventListener('touchend', onDpadEnd, { passive: false });
+        dpad.addEventListener('touchcancel', onDpadEnd, { passive: false });
+
+        // Mouse click fallback for desktop testing
+        bindTouch('btn-left', () => { this.keys.left = true; }, () => { this.keys.left = false; });
+        bindTouch('btn-right', () => { this.keys.right = true; }, () => { this.keys.right = false; });
+      }
+
+      // Jump button handles both ground jump and mid-air boost / double jump
       bindTouch('btn-jump', () => {
-        this.keys.jumpBuffered = true;
-        this.keys.jump = true;
+        if (this.player.onGround && !this.keys.down) {
+          this.keys.jumpBuffered = true;
+          this.keys.jump = true;
+        } else {
+          // Mid-air double-jump with shell ejection!
+          const ejected = this.player.ejectShell(this.shellBlocks, this.particles);
+          if (ejected) {
+            this.updateShellUI();
+          } else {
+            this.keys.jumpBuffered = true;
+            this.keys.jump = true;
+          }
+        }
       }, () => {
         this.keys.jump = false;
       });
+
+      // Dedicated Eject button
       bindTouch('btn-eject', () => {
-        this.player.ejectShell(this.shellBlocks, this.particles);
-        this.updateShellUI();
+        const ejected = this.player.ejectShell(this.shellBlocks, this.particles);
+        if (ejected) {
+          this.updateShellUI();
+        }
       });
+
+      // Recall button
       bindTouch('btn-touch-recall', () => {
         this.player.recallShells(this.shellBlocks);
       });
@@ -2122,15 +2498,16 @@
     }
   }
 
-  // Handle click to restart on victory screen
-  window.addEventListener('click', (e) => {
-    // If clicking on game and victory is active, reset to level 1
+  // Handle click or touch to restart on victory screen
+  const handleVictoryRestart = (e) => {
     if (window.gameInstance && window.gameInstance.victoryScreen) {
       if (e.target.closest('#hud-overlay') || e.target.closest('#level-modal')) return;
       window.gameInstance.victoryScreen = false;
       window.gameInstance.loadLevel(0);
     }
-  });
+  };
+  window.addEventListener('click', handleVictoryRestart);
+  window.addEventListener('touchstart', handleVictoryRestart, { passive: true });
 
   // Start the game once DOM is ready
   function initGame() {
