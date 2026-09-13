@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title>Jumping Shell</title>
-  <meta name="description" content="A puzzle-platformer across 6 levels where you eject nested shells for mid-air boosts and use them as physical blocks to solve puzzles, with full mobile and tablet support." />
+  <meta name="description" content="A puzzle-platformer across 50 levels where you eject nested shells for mid-air boosts and use them as physical blocks to solve puzzles, with full mobile and tablet support." />
   <meta property="og:title" content="Jumping Shell" />
-  <meta property="og:description" content="A puzzle-platformer across 6 levels where you eject nested shells for mid-air boosts and use them as physical blocks to solve puzzles, with full mobile and tablet support." />
+  <meta property="og:description" content="A puzzle-platformer across 50 levels where you eject nested shells for mid-air boosts and use them as physical blocks to solve puzzles, with full mobile and tablet support." />
   <style>
     * {
       box-sizing: border-box;
@@ -437,7 +437,7 @@
       border-radius: 14px;
       padding: 20px;
       width: 100%;
-      max-width: 480px;
+      max-width: 540px;
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
       max-height: 88vh;
       max-height: 88dvh;
@@ -476,7 +476,7 @@
 
     .level-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
       gap: 10px;
     }
 
@@ -812,7 +812,7 @@
 <div id="level-modal">
   <div class="modal-card">
     <div class="modal-header">
-      <h3>SELECT LEVEL (1 – 6)</h3>
+      <h3 id="modal-title">SELECT LEVEL (1 – 20)</h3>
       <button id="modal-close" class="modal-close-btn">&times;</button>
     </div>
     <div class="level-grid" id="level-grid"></div>
@@ -1107,6 +1107,1266 @@
       doors: [
         { id: 'gate1', switchId: 'sw1', x: 460, y: 320, w: 36, h: 188, currentY: 320, targetY: 320, openY: 132, closedY: 320 },
         { id: 'gate2', switchId: 'sw2', x: 460, y: 32, w: 36, h: 128, currentY: 32, targetY: 32, openY: -96, closedY: 32 }
+      ]
+    },
+    {
+      id: 7,
+      name: "The Squeeze & Elevate",
+      hint: "Eject your outer shell to shrink and fit through the low tunnel, activate the switch, then scale the steps!",
+      spawn: { x: 80, y: 440 },
+      exit: { x: 840, y: 326, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Low crawl tunnel (ceiling at y: 480, floor at 508 -> 28px clearance)
+        { x: 160, y: 220, w: 200, h: 260 },
+        // Stepping platform
+        { x: 520, y: 390, w: 120, h: 24 },
+        // High barrier wall
+        { x: 700, y: 0, w: 36, h: 280 },
+        // Right sanctuary plateau
+        { x: 760, y: 380, w: 168, h: 128 }
+      ],
+      switches: [
+        { id: 'sw1', x: 240, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 550, y: 378, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 420, y: 340, w: 36, h: 168, currentY: 340, targetY: 340, openY: 172, closedY: 340 },
+        { id: 'gate2', switchId: 'sw2', x: 700, y: 280, w: 36, h: 228, currentY: 280, targetY: 280, openY: 90, closedY: 280 }
+      ]
+    },
+    {
+      id: 8,
+      name: "Weight Balance Bridge",
+      hint: "Drop a shell onto the pillar switch to raise the barrier, then weigh down the floating island switch!",
+      spawn: { x: 70, y: 320 },
+      exit: { x: 840, y: 216, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Starter cliff
+        { x: 32, y: 360, w: 150, h: 148 },
+        // Pillar with Switch 1
+        { x: 260, y: 390, w: 90, h: 118 },
+        // Upper wall hanger
+        { x: 420, y: 0, w: 36, h: 180 },
+        // Floating Island 2
+        { x: 520, y: 330, w: 110, h: 24 },
+        // Right sanctuary plateau
+        { x: 760, y: 270, w: 168, h: 238 }
+      ],
+      switches: [
+        { id: 'sw1', x: 280, y: 378, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 550, y: 318, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 420, y: 180, w: 36, h: 328, currentY: 180, targetY: 180, openY: -130, closedY: 180 },
+        { id: 'gate2', switchId: 'sw2', x: 700, y: 140, w: 36, h: 368, currentY: 140, targetY: 140, openY: -200, closedY: 140 }
+      ]
+    },
+    {
+      id: 9,
+      name: "Triple Boost Pinnacle",
+      hint: "Weigh down the high switch to open the lower tunnel, or chain your mid-air boosts to leap over the pinnacle!",
+      spawn: { x: 80, y: 440 },
+      exit: { x: 740, y: 116, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Stepping block
+        { x: 120, y: 370, w: 80, h: 20 },
+        // Divider 1
+        { x: 260, y: 200, w: 36, h: 308 },
+        // Mid canyon block
+        { x: 370, y: 420, w: 90, h: 88 },
+        // Suspended switch platform
+        { x: 480, y: 300, w: 90, h: 20 },
+        // Divider 2 upper overhang
+        { x: 620, y: 0, w: 36, h: 220 },
+        // Right ascending steps
+        { x: 720, y: 400, w: 80, h: 20 },
+        { x: 820, y: 280, w: 80, h: 20 },
+        // Peak sanctuary
+        { x: 700, y: 170, w: 130, h: 24 }
+      ],
+      switches: [
+        { id: 'sw1', x: 500, y: 288, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 620, y: 220, w: 36, h: 288, currentY: 220, targetY: 220, openY: 40, closedY: 220 }
+      ]
+    },
+    {
+      id: 10,
+      name: "The Master's Gauntlet",
+      hint: "Combine shrinking, shell stacking, recall timing, and mid-air double jumps to conquer the final gauntlet!",
+      spawn: { x: 60, y: 440 },
+      exit: { x: 860, y: 96, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Crawl tunnel ceiling (28px clearance)
+        { x: 120, y: 240, w: 180, h: 240 },
+        // Room 2 intermediate platform
+        { x: 420, y: 360, w: 130, h: 24 },
+        // Central tower wall
+        { x: 590, y: 0, w: 36, h: 330 },
+        // Spire staircase
+        { x: 670, y: 420, w: 80, h: 20 },
+        { x: 800, y: 320, w: 80, h: 20 },
+        { x: 670, y: 210, w: 80, h: 20 },
+        // Apex ceiling divider
+        { x: 800, y: 0, w: 36, h: 100 },
+        // Final summit platform
+        { x: 836, y: 150, w: 92, h: 24 }
+      ],
+      switches: [
+        { id: 'sw1', x: 80, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 460, y: 348, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 330, y: 330, w: 36, h: 178, currentY: 330, targetY: 330, openY: 152, closedY: 330 },
+        { id: 'gate2', switchId: 'sw2', x: 590, y: 330, w: 36, h: 178, currentY: 330, targetY: 330, openY: 160, closedY: 330 },
+        { id: 'gate3', switchId: 'sw2', x: 800, y: 100, w: 36, h: 140, currentY: 100, targetY: 100, openY: -40, closedY: 100 }
+      ]
+    },
+    {
+      id: 11,
+      name: "The Pendulum Chasm",
+      hint: "Leap across the chasm, drop a shell on the center pillar switch to lift the barrier, then launch to the sanctuary!",
+      spawn: { x: 70, y: 390 },
+      exit: { x: 840, y: 306, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Left starting cliff
+        { x: 32, y: 440, w: 160, h: 68 },
+        // Center Pillar
+        { x: 390, y: 380, w: 100, h: 128 },
+        // Safety low blocks in pit
+        { x: 230, y: 470, w: 70, h: 38 },
+        { x: 570, y: 470, w: 70, h: 38 },
+        // Right sanctuary plateau
+        { x: 720, y: 360, w: 208, h: 148 }
+      ],
+      switches: [
+        { id: 'sw1', x: 418, y: 368, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 670, y: 32, w: 36, h: 360, currentY: 32, targetY: 32, openY: -300, closedY: 32 }
+      ]
+    },
+    {
+      id: 12,
+      name: "Dual Switch Vault",
+      hint: "Weigh the left high switch to unlock the right chamber, activate the second switch, then access the center vault!",
+      spawn: { x: 80, y: 440 },
+      exit: { x: 400, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Left high perch
+        { x: 32, y: 260, w: 130, h: 24 },
+        // Stepping platform left
+        { x: 190, y: 380, w: 70, h: 24 },
+        // Left barrier wall
+        { x: 290, y: 160, w: 36, h: 348 },
+        // Center vault roof
+        { x: 360, y: 250, w: 220, h: 24 },
+        // Right room entrance wall
+        { x: 640, y: 32, w: 36, h: 260 },
+        // Stepping platform right
+        { x: 710, y: 400, w: 70, h: 24 },
+        // Right switch platform
+        { x: 810, y: 330, w: 118, h: 24 }
+      ],
+      switches: [
+        { id: 'sw1', x: 70, y: 248, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 840, y: 318, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 640, y: 292, w: 36, h: 216, currentY: 292, targetY: 292, openY: 100, closedY: 292 },
+        { id: 'gate2', switchId: 'sw2', x: 460, y: 274, w: 36, h: 234, currentY: 274, targetY: 274, openY: 90, closedY: 274 }
+      ]
+    },
+    {
+      id: 13,
+      name: "The Trench & Tower",
+      hint: "Escape the deep trench with a shell boost, scale the central spire to press the summit switch, and unlock the gate!",
+      spawn: { x: 70, y: 320 },
+      exit: { x: 840, y: 356, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Left starting bluff
+        { x: 32, y: 370, w: 140, h: 138 },
+        // Trench right cliff
+        { x: 380, y: 370, w: 80, h: 138 },
+        // Central Tower
+        { x: 520, y: 190, w: 60, h: 318 },
+        { x: 500, y: 190, w: 100, h: 20 },
+        // Right gate wall divider
+        { x: 720, y: 32, w: 36, h: 260 },
+        // Right plateau
+        { x: 780, y: 410, w: 148, h: 98 }
+      ],
+      switches: [
+        { id: 'sw1', x: 528, y: 178, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 720, y: 292, w: 36, h: 216, currentY: 292, targetY: 292, openY: 100, closedY: 292 }
+      ]
+    },
+    {
+      id: 14,
+      name: "The Low Crawl Vent",
+      hint: "Eject a shell on the switch to hold open the gate and shrink yourself down to crawl through the vent. Then recall [E/R] to jump to the exit!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 780, y: 296, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Low ceiling over starter tunnel (clearance: 508 - 476 = 32px, fits layer <= 2 easily)
+        { x: 180, y: 32, w: 220, h: 444 },
+        // Wall above Gate 1
+        { x: 400, y: 32, w: 36, h: 320 },
+        // Wide stepping platform
+        { x: 490, y: 420, w: 120, h: 24 },
+        // Right sanctuary plateau
+        { x: 670, y: 350, w: 258, h: 158 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 400, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 15,
+      name: "Stairway to the Stars",
+      hint: "Ascend the stairway, drop a shell on the Step 2 switch to lift the barrier, then walk through to the exit portal!",
+      spawn: { x: 80, y: 440 },
+      exit: { x: 810, y: 216, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Step 1
+        { x: 180, y: 430, w: 120, h: 78 },
+        // Step 2
+        { x: 340, y: 350, w: 130, h: 158 },
+        // Step 3
+        { x: 510, y: 270, w: 130, h: 238 },
+        // Wall above gate
+        { x: 660, y: 32, w: 36, h: 140 },
+        // Sanctuary plateau
+        { x: 696, y: 270, w: 232, h: 238 }
+      ],
+      switches: [
+        { id: 'sw1', x: 385, y: 338, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 660, y: 172, w: 36, h: 100, currentY: 172, targetY: 172, openY: 42, closedY: 172 }
+      ]
+    },
+    {
+      id: 16,
+      name: "Crossfire Gates",
+      hint: "Drop a shell on the left switch to enter the airlock, then use the airlock shelf switch to unlock the final gate!",
+      spawn: { x: 80, y: 440 },
+      exit: { x: 840, y: 346, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Left Switch pedestal
+        { x: 160, y: 440, w: 80, h: 68 },
+        // Gate 1 wall
+        { x: 340, y: 32, w: 36, h: 260 },
+        // Airlock ceiling
+        { x: 340, y: 180, w: 300, h: 24 },
+        // Airlock intermediate shelf
+        { x: 420, y: 370, w: 100, h: 20 },
+        // Gate 2 wall
+        { x: 640, y: 32, w: 36, h: 260 },
+        // Right sanctuary plateau
+        { x: 760, y: 400, w: 168, h: 108 }
+      ],
+      switches: [
+        { id: 'sw1', x: 178, y: 428, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 448, y: 358, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 340, y: 292, w: 36, h: 216, currentY: 292, targetY: 292, openY: 100, closedY: 292 },
+        { id: 'gate2', switchId: 'sw2', x: 640, y: 292, w: 36, h: 216, currentY: 292, targetY: 292, openY: 100, closedY: 292 }
+      ]
+    },
+    {
+      id: 17,
+      name: "The Heavyweight Elevator",
+      hint: "Weigh the switch to lower the elevator platform. Stand on the platform, then recall your shell [E/R] to ride it up!",
+      spawn: { x: 80, y: 440 },
+      exit: { x: 840, y: 106, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Low pedestal for Switch 1
+        { x: 170, y: 460, w: 80, h: 48 },
+        // Stepping platform
+        { x: 300, y: 410, w: 70, h: 24 },
+        // Upper wall hanger above elevator
+        { x: 410, y: 32, w: 36, h: 60 },
+        // Central dividing wall
+        { x: 510, y: 160, w: 36, h: 348 },
+        // Upper right walkway
+        { x: 510, y: 160, w: 418, h: 28 }
+      ],
+      switches: [
+        { id: 'sw1', x: 188, y: 448, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 410, y: 160, w: 100, h: 24, currentY: 160, targetY: 160, openY: 380, closedY: 160 }
+      ]
+    },
+    {
+      id: 18,
+      name: "Labyrinth of Ducts",
+      hint: "Drop your outer shell on Switch 1 to open Gate 1 and fit Duct A, then drop your middle shell on Switch 2 to clear Duct B!",
+      spawn: { x: 60, y: 440 },
+      exit: { x: 830, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Duct A ceiling (clearance: 508 - 476 = 32px, fits layer 2)
+        { x: 160, y: 32, w: 200, h: 444 },
+        // Wall above Gate 1
+        { x: 360, y: 32, w: 36, h: 320 },
+        // Duct B ceiling (clearance: 508 - 483 = 25px, fits inner core layer 1)
+        { x: 520, y: 32, w: 200, h: 451 },
+        // Wall above Gate 2
+        { x: 720, y: 32, w: 36, h: 320 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 440, y: 496, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 360, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 720, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 19,
+      name: "Skyline Leap",
+      hint: "Ascend the sky islands, drop a shell on the switch to retract the citadel gate, then leap across to the portal!",
+      spawn: { x: 80, y: 400 },
+      exit: { x: 830, y: 166, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Starter cloud
+        { x: 32, y: 440, w: 140, h: 68 },
+        // Floating step 1
+        { x: 230, y: 370, w: 110, h: 24 },
+        // Floating step 2
+        { x: 400, y: 290, w: 110, h: 24 },
+        // Floating step 3 (with switch)
+        { x: 570, y: 220, w: 110, h: 24 },
+        // Safety recovery island below
+        { x: 280, y: 480, w: 380, h: 28 },
+        // Sky divider overhang
+        { x: 740, y: 32, w: 36, h: 100 },
+        // Citadel Plateau
+        { x: 776, y: 220, w: 152, h: 288 }
+      ],
+      switches: [
+        { id: 'sw1', x: 600, y: 208, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 740, y: 132, w: 36, h: 128, currentY: 132, targetY: 132, openY: -100, closedY: 132 }
+      ]
+    },
+    {
+      id: 20,
+      name: "The Grand Sanctuary",
+      hint: "Drop Shell 1 on Switch 1 to open the Cathedral, then leap up the terraces and drop Shell 2 on Switch 2 to breach the Sanctuary!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 820, y: 156, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Wall above Gate 1
+        { x: 220, y: 32, w: 36, h: 320 },
+        // Grand Cathedral - Terrace 1
+        { x: 290, y: 410, w: 120, h: 24 },
+        // Grand Cathedral - Terrace 2 (holds Switch 2)
+        { x: 470, y: 310, w: 140, h: 24 },
+        // Grand Cathedral - High Gallery
+        { x: 300, y: 210, w: 120, h: 24 },
+        // Wall above Gate 2
+        { x: 680, y: 32, w: 36, h: 60 },
+        // Wall below Gate 2 threshold
+        { x: 680, y: 210, w: 36, h: 298 },
+        // Sanctuary Altar Plateau
+        { x: 716, y: 210, w: 212, h: 298 }
+      ],
+      switches: [
+        { id: 'sw1', x: 100, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 510, y: 298, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 220, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 680, y: 92, w: 36, h: 118, currentY: 92, targetY: 92, openY: -30, closedY: 92 }
+      ]
+    },
+    {
+      id: 21,
+      name: "The Vault of Leaps",
+      hint: "Leap across the pillars, drop a shell on the floating switch to open the vault gate, then boost across to the exit!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 376, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Stepping pillar 1
+        { x: 190, y: 390, w: 90, h: 118 },
+        // Suspended Switch Platform
+        { x: 330, y: 280, w: 100, h: 24 },
+        // Pillar 2
+        { x: 480, y: 360, w: 90, h: 148 },
+        // Divider wall above gate
+        { x: 640, y: 32, w: 36, h: 280 },
+        // Sanctuary Landing
+        { x: 700, y: 430, w: 228, h: 78 }
+      ],
+      switches: [
+        { id: 'sw1', x: 358, y: 268, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 640, y: 312, w: 36, h: 196, currentY: 312, targetY: 312, openY: 116, closedY: 312 }
+      ]
+    },
+    {
+      id: 22,
+      name: "Twin Columns",
+      hint: "Eject a shell on the Left Tower switch to raise the center elevator platform and unlock the sanctuary!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 156, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Starter step
+        { x: 130, y: 430, w: 70, h: 78 },
+        // Left Tower
+        { x: 220, y: 340, w: 110, h: 168 },
+        // Pit safety block
+        { x: 370, y: 460, w: 70, h: 48 },
+        // Upper wall above gate
+        { x: 660, y: 32, w: 36, h: 60 },
+        // Lower wall below gate
+        { x: 660, y: 210, w: 36, h: 298 },
+        // Sanctuary Plateau
+        { x: 696, y: 210, w: 232, h: 298 }
+      ],
+      switches: [
+        { id: 'sw1', x: 252, y: 328, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 480, y: 440, w: 110, h: 24, currentY: 440, targetY: 440, openY: 260, closedY: 440 },
+        { id: 'gate2', switchId: 'sw1', x: 660, y: 92, w: 36, h: 118, currentY: 92, targetY: 92, openY: -30, closedY: 92 }
+      ]
+    },
+    {
+      id: 23,
+      name: "The Zigzag Squeeze",
+      hint: "Drop Shell 1 on Switch 1 to shrink and crawl the lower vent, then climb the atrium steps and weigh Switch 2 to exit!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 850, y: 440, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Vent ceiling (508 - 476 = 32px clearance)
+        { x: 180, y: 32, w: 200, h: 444 },
+        // Wall above Gate 1
+        { x: 380, y: 32, w: 36, h: 320 },
+        // Atrium step 1
+        { x: 470, y: 420, w: 90, h: 24 },
+        // Atrium step 2
+        { x: 590, y: 320, w: 90, h: 24 },
+        // Wall above Gate 2
+        { x: 720, y: 32, w: 36, h: 320 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 612, y: 308, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 380, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 720, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 24,
+      name: "Orbital Suspension",
+      hint: "Leap across the floating islands, drop a shell on Island 2 to retract the sky barrier, and land in the sanctuary!",
+      spawn: { x: 70, y: 360 },
+      exit: { x: 840, y: 156, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Starter cliff
+        { x: 32, y: 410, w: 140, h: 98 },
+        // Island 1
+        { x: 230, y: 350, w: 90, h: 24 },
+        // Island 2
+        { x: 380, y: 280, w: 100, h: 24 },
+        // Island 3
+        { x: 530, y: 210, w: 90, h: 24 },
+        // Safety recovery shelf
+        { x: 200, y: 486, w: 440, h: 22 },
+        // Wall above gate
+        { x: 690, y: 32, w: 36, h: 118 },
+        // Lower divider wall
+        { x: 690, y: 310, w: 36, h: 198 },
+        // Sanctuary Plateau
+        { x: 726, y: 210, w: 202, h: 298 }
+      ],
+      switches: [
+        { id: 'sw1', x: 408, y: 268, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 690, y: 150, w: 36, h: 160, currentY: 150, targetY: 150, openY: -10, closedY: 150 }
+      ]
+    },
+    {
+      id: 25,
+      name: "The Micro Duct Express",
+      hint: "Drop both shells on the starting switches to shed down to your tiny core, open both gates, and slip through the micro duct!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 440, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Wall above Gate 1
+        { x: 240, y: 32, w: 36, h: 320 },
+        // Low ceiling over express duct (ceiling at y: 482, floor at y: 508 -> 26px clearance)
+        { x: 276, y: 32, w: 420, h: 450 },
+        // Wall above Gate 2
+        { x: 696, y: 32, w: 36, h: 320 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 160, y: 496, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 240, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 696, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 26,
+      name: "The Spire of Echoes",
+      hint: "Scale the ascending spires, drop a shell on Pillar 2 to lift the summit gate, then leap across to the Sanctuary Peak!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 820, y: 206, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Spire Pillar 1
+        { x: 180, y: 420, w: 90, h: 88 },
+        // Spire Pillar 2 (with Switch)
+        { x: 340, y: 340, w: 90, h: 168 },
+        // Spire Pillar 3
+        { x: 500, y: 260, w: 90, h: 248 },
+        // Wall above gate
+        { x: 660, y: 32, w: 36, h: 100 },
+        // Sanctuary Peak
+        { x: 696, y: 260, w: 232, h: 248 }
+      ],
+      switches: [
+        { id: 'sw1', x: 362, y: 328, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 660, y: 132, w: 36, h: 128, currentY: 132, targetY: 132, openY: -60, closedY: 132 }
+      ]
+    },
+    {
+      id: 27,
+      name: "Airlock Sequence",
+      hint: "Weigh Switch 1 to breach Airlock 1, hop onto the shelf to weigh Switch 2, then recall your shells to jump to the high exit!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 236, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Wall 1
+        { x: 260, y: 32, w: 36, h: 320 },
+        // Airlock shelf
+        { x: 360, y: 390, w: 110, h: 24 },
+        // Wall 2
+        { x: 570, y: 32, w: 36, h: 320 },
+        // Stepping stone
+        { x: 670, y: 410, w: 70, h: 24 },
+        // High sanctuary ledge
+        { x: 780, y: 290, w: 148, h: 218 }
+      ],
+      switches: [
+        { id: 'sw1', x: 110, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 392, y: 378, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 260, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 570, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 28,
+      name: "The Great Chasm Bastion",
+      hint: "Weigh Switch 1 with Shell 1 to open the canyon gate. Scale the canyon pillars to weigh Switch 2, then leap across to the sanctuary!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 820, y: 186, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Wall above Gate 1
+        { x: 230, y: 32, w: 36, h: 320 },
+        // Canyon Step 1
+        { x: 300, y: 430, w: 100, h: 24 },
+        // Central Canyon Tower (holds Switch 2)
+        { x: 440, y: 350, w: 120, h: 158 },
+        // Upper Mid-Air Shelf
+        { x: 580, y: 280, w: 70, h: 22 },
+        // Wall above Gate 2
+        { x: 670, y: 32, w: 36, h: 80 },
+        // Wall below Gate 2 threshold
+        { x: 670, y: 240, w: 36, h: 268 },
+        // Sanctuary Plateau
+        { x: 706, y: 240, w: 222, h: 268 }
+      ],
+      switches: [
+        { id: 'sw1', x: 100, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 478, y: 338, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 230, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 670, y: 112, w: 36, h: 128, currentY: 112, targetY: 112, openY: -50, closedY: 112 }
+      ]
+    },
+    {
+      id: 29,
+      name: "The Sky Citadel",
+      hint: "Weigh Step 2 with Shell 1 to lift the Citadel Portcullis, hop to Island 3, and boost directly into the Sky Citadel!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 126, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Bastion Step 1
+        { x: 180, y: 420, w: 110, h: 88 },
+        // Bastion Step 2
+        { x: 340, y: 330, w: 120, h: 178 },
+        // Floating Island 3
+        { x: 520, y: 240, w: 110, h: 24 },
+        // Wall above Citadel Gate
+        { x: 700, y: 32, w: 36, h: 120 },
+        // Lower Citadel Wall
+        { x: 700, y: 292, w: 36, h: 216 },
+        // Sky Citadel Apex Throne
+        { x: 736, y: 180, w: 192, h: 328 }
+      ],
+      switches: [
+        { id: 'sw1', x: 378, y: 318, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 700, y: 152, w: 36, h: 140, currentY: 152, targetY: 152, openY: -40, closedY: 152 }
+      ]
+    },
+    {
+      id: 30,
+      name: "The Eternal Core",
+      hint: "Weigh Switch 1 to open the Inner Gateway, scale the Cathedral terraces to weigh Switch 2, and boost to the Eternal Portal!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 830, y: 146, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        // Wall above Gate 1
+        { x: 220, y: 32, w: 36, h: 320 },
+        // Cathedral Terrace 1
+        { x: 300, y: 410, w: 120, h: 24 },
+        // Cathedral Terrace 2
+        { x: 480, y: 310, w: 130, h: 24 },
+        // Cathedral High Gallery
+        { x: 320, y: 210, w: 120, h: 24 },
+        // Wall above Gate 2
+        { x: 680, y: 32, w: 36, h: 60 },
+        // Wall below Gate 2
+        { x: 680, y: 210, w: 36, h: 298 },
+        // Eternal Sanctuary Plateau
+        { x: 716, y: 200, w: 212, h: 308 }
+      ],
+      switches: [
+        { id: 'sw1', x: 100, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 520, y: 298, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 220, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 680, y: 92, w: 36, h: 118, currentY: 92, targetY: 92, openY: -30, closedY: 92 }
+      ]
+    },
+    {
+      id: 31,
+      name: "The Resonant Steps",
+      hint: "Hop up the stepping pillars, eject Shell 1 onto Pillar 2 to lift the summit gate, and leap to the Sanctuary Peak!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 820, y: 206, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 180, y: 430, w: 90, h: 78 },
+        { x: 330, y: 350, w: 100, h: 158 },
+        { x: 490, y: 270, w: 100, h: 238 },
+        { x: 670, y: 32, w: 36, h: 100 },
+        { x: 670, y: 260, w: 36, h: 248 },
+        { x: 706, y: 260, w: 222, h: 248 }
+      ],
+      switches: [
+        { id: 'sw1', x: 358, y: 338, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 670, y: 132, w: 36, h: 128, currentY: 132, targetY: 132, openY: -40, closedY: 132 }
+      ]
+    },
+    {
+      id: 32,
+      name: "The Double Lock Arch",
+      hint: "Weigh Switch 1 to open Chamber 1, then weigh Switch 2 to unlock the sanctuary arch!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 260, y: 32, w: 36, h: 320 },
+        { x: 380, y: 420, w: 100, h: 88 },
+        { x: 580, y: 32, w: 36, h: 320 },
+        { x: 690, y: 440, w: 90, h: 68 }
+      ],
+      switches: [
+        { id: 'sw1', x: 100, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 408, y: 408, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 260, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 580, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 33,
+      name: "The Gravity Well",
+      hint: "Hop across the suspended terraces, drop a shell on Terrace 2, and enter the high altar!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 830, y: 176, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 180, y: 380, w: 100, h: 24 },
+        { x: 340, y: 300, w: 110, h: 24 },
+        { x: 510, y: 220, w: 100, h: 24 },
+        { x: 680, y: 32, w: 36, h: 70 },
+        { x: 680, y: 230, w: 36, h: 278 },
+        { x: 716, y: 230, w: 212, h: 278 }
+      ],
+      switches: [
+        { id: 'sw1', x: 373, y: 288, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 680, y: 102, w: 36, h: 128, currentY: 102, targetY: 102, openY: -40, closedY: 102 }
+      ]
+    },
+    {
+      id: 34,
+      name: "The Micro Passage",
+      hint: "Eject a shell on Switch 1 to shrink down to Layer 2, crawl under the low conduit, and reach the exit!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 190, y: 32, w: 310, h: 444 },
+        { x: 500, y: 32, w: 36, h: 320 },
+        { x: 620, y: 420, w: 100, h: 88 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 500, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 35,
+      name: "The Floating Bastion",
+      hint: "Ascend the bastion ramparts and eject a shell onto the floating platform to unlock the high sanctum!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 830, y: 186, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 170, y: 410, w: 110, h: 98 },
+        { x: 340, y: 320, w: 120, h: 188 },
+        { x: 490, y: 230, w: 100, h: 24 },
+        { x: 670, y: 32, w: 36, h: 70 },
+        { x: 670, y: 240, w: 36, h: 268 },
+        { x: 706, y: 240, w: 222, h: 268 }
+      ],
+      switches: [
+        { id: 'sw1', x: 518, y: 218, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 670, y: 102, w: 36, h: 138, currentY: 102, targetY: 102, openY: -40, closedY: 102 }
+      ]
+    },
+    {
+      id: 36,
+      name: "The Dual Aqueduct",
+      hint: "Scale Aqueduct Pillar 1 and Pillar 2, ejecting shells to open each successive security lock!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 220, y: 370, w: 90, h: 138 },
+        { x: 350, y: 32, w: 36, h: 320 },
+        { x: 480, y: 340, w: 90, h: 168 },
+        { x: 620, y: 32, w: 36, h: 320 },
+        { x: 720, y: 420, w: 120, h: 88 }
+      ],
+      switches: [
+        { id: 'sw1', x: 243, y: 358, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 503, y: 328, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 350, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 620, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 37,
+      name: "The Tower of Wings",
+      hint: "Use the upward thrust of a shell ejection to reach the high shelf, trigger the switch, and enter the balcony!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 820, y: 156, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 260, y: 320, w: 100, h: 188 },
+        { x: 430, y: 220, w: 100, h: 24 },
+        { x: 650, y: 32, w: 36, h: 60 },
+        { x: 650, y: 210, w: 36, h: 298 },
+        { x: 686, y: 210, w: 242, h: 298 }
+      ],
+      switches: [
+        { id: 'sw1', x: 458, y: 208, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 650, y: 92, w: 36, h: 118, currentY: 92, targetY: 92, openY: -40, closedY: 92 }
+      ]
+    },
+    {
+      id: 38,
+      name: "The Symmetrical Vault",
+      hint: "Leave a shell on the entrance pad to raise Gate 1, then climb the central pillar to unlock the inner sanctum!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 260, y: 32, w: 36, h: 320 },
+        { x: 420, y: 300, w: 100, h: 208 },
+        { x: 660, y: 32, w: 36, h: 320 },
+        { x: 550, y: 420, w: 80, h: 88 }
+      ],
+      switches: [
+        { id: 'sw1', x: 100, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 568, y: 408, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 260, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 660, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 39,
+      name: "The Sky Bridges",
+      hint: "Traverse the suspended sky bridges across the great chasm, triggering the sky barrier to access the cliff!",
+      spawn: { x: 70, y: 340 },
+      exit: { x: 830, y: 146, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 32, y: 380, w: 120, h: 128 },
+        { x: 220, y: 330, w: 100, h: 24 },
+        { x: 380, y: 250, w: 110, h: 24 },
+        { x: 550, y: 190, w: 100, h: 24 },
+        { x: 700, y: 32, w: 36, h: 50 },
+        { x: 700, y: 200, w: 36, h: 308 },
+        { x: 736, y: 200, w: 192, h: 308 }
+      ],
+      switches: [
+        { id: 'sw1', x: 413, y: 238, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 700, y: 82, w: 36, h: 118, currentY: 82, targetY: 82, openY: -40, closedY: 82 }
+      ]
+    },
+    {
+      id: 40,
+      name: "The Fortress of Reflection",
+      hint: "A grand fortress: weigh Switch 1 at the courtyard gates, scale the gallery to trigger Switch 2, and enter the Keep!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 830, y: 176, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 220, y: 32, w: 36, h: 320 },
+        { x: 290, y: 420, w: 100, h: 88 },
+        { x: 450, y: 330, w: 120, h: 24 },
+        { x: 670, y: 32, w: 36, h: 60 },
+        { x: 670, y: 230, w: 36, h: 278 },
+        { x: 706, y: 230, w: 222, h: 278 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 488, y: 318, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 220, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 670, y: 92, w: 36, h: 138, currentY: 92, targetY: 92, openY: -40, closedY: 92 }
+      ]
+    },
+    {
+      id: 41,
+      name: "The Pendulum Corridors",
+      hint: "Shed your shell to slip beneath the low conduit, leap up the stepping pillar, and open the escape airlock!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 180, y: 32, w: 180, h: 444 },
+        { x: 360, y: 32, w: 36, h: 320 },
+        { x: 480, y: 380, w: 90, h: 128 },
+        { x: 650, y: 32, w: 36, h: 320 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 503, y: 368, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 360, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 650, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 42,
+      name: "The Zenith Stair",
+      hint: "Climb the monumental steps, drop a shell on Step 3, and stride through the summit portal!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 830, y: 176, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 160, y: 430, w: 80, h: 78 },
+        { x: 290, y: 360, w: 90, h: 148 },
+        { x: 440, y: 280, w: 100, h: 228 },
+        { x: 660, y: 32, w: 36, h: 70 },
+        { x: 660, y: 230, w: 36, h: 278 },
+        { x: 696, y: 230, w: 232, h: 278 }
+      ],
+      switches: [
+        { id: 'sw1', x: 468, y: 268, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 660, y: 102, w: 36, h: 128, currentY: 102, targetY: 102, openY: -30, closedY: 102 }
+      ]
+    },
+    {
+      id: 43,
+      name: "The Cascade Chamber",
+      hint: "Navigate the tiered waterfall chambers, weighting each lock pad to reveal the destination!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 200, y: 410, w: 100, h: 24 },
+        { x: 330, y: 32, w: 36, h: 320 },
+        { x: 450, y: 340, w: 110, h: 24 },
+        { x: 630, y: 32, w: 36, h: 320 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 483, y: 328, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 330, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 630, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 44,
+      name: "The High Pillars of Solitude",
+      hint: "Ascend the sheer monolithic pillars across the chasm, weighting Pillar 2 to unlock the high plateau!",
+      spawn: { x: 70, y: 360 },
+      exit: { x: 830, y: 126, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 32, y: 400, w: 120, h: 108 },
+        { x: 220, y: 320, w: 80, h: 188 },
+        { x: 370, y: 230, w: 90, h: 278 },
+        { x: 530, y: 160, w: 80, h: 348 },
+        { x: 680, y: 32, w: 36, h: 50 },
+        { x: 680, y: 180, w: 36, h: 328 },
+        { x: 716, y: 180, w: 212, h: 328 }
+      ],
+      switches: [
+        { id: 'sw1', x: 393, y: 218, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 680, y: 82, w: 36, h: 98, currentY: 82, targetY: 82, openY: -40, closedY: 82 }
+      ]
+    },
+    {
+      id: 45,
+      name: "The Micro Matrix",
+      hint: "Eject two nested shells on the start switches to reduce down to your tiny core and slip through the ultra-narrow crawlway!",
+      spawn: { x: 50, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 240, y: 32, w: 440, h: 448 },
+        { x: 204, y: 32, w: 36, h: 320 },
+        { x: 680, y: 32, w: 36, h: 320 }
+      ],
+      switches: [
+        { id: 'sw1', x: 80, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 150, y: 496, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 204, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 680, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 46,
+      name: "The Spire of Dawn",
+      hint: "Scale the dawn terraces to the floating switch island, open the summit gate, and reach the sunrise!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 830, y: 146, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 170, y: 420, w: 80, h: 88 },
+        { x: 290, y: 330, w: 90, h: 178 },
+        { x: 440, y: 250, w: 100, h: 24 },
+        { x: 650, y: 32, w: 36, h: 60 },
+        { x: 650, y: 200, w: 36, h: 308 },
+        { x: 686, y: 200, w: 242, h: 308 }
+      ],
+      switches: [
+        { id: 'sw1', x: 468, y: 238, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 650, y: 92, w: 36, h: 108, currentY: 92, targetY: 92, openY: -40, closedY: 92 }
+      ]
+    },
+    {
+      id: 47,
+      name: "The Labyrinth of Gates",
+      hint: "A dual-level labyrinth: trigger Gate 1 on the floor, hop across the mid-air islands to trigger Gate 2, and break free!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 840, y: 454, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 250, y: 32, w: 36, h: 320 },
+        { x: 350, y: 400, w: 100, h: 24 },
+        { x: 480, y: 320, w: 100, h: 24 },
+        { x: 640, y: 32, w: 36, h: 320 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 508, y: 308, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 250, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 640, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 }
+      ]
+    },
+    {
+      id: 48,
+      name: "The Astral Overpass",
+      hint: "Ascend across soaring overpass towers, drop a shell on Tower 2 to open the sky barrier, and land at the Astral Sanctum!",
+      spawn: { x: 70, y: 340 },
+      exit: { x: 830, y: 126, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 32, y: 380, w: 130, h: 128 },
+        { x: 230, y: 320, w: 90, h: 188 },
+        { x: 400, y: 240, w: 100, h: 268 },
+        { x: 570, y: 170, w: 90, h: 338 },
+        { x: 720, y: 32, w: 36, h: 50 },
+        { x: 720, y: 180, w: 36, h: 328 },
+        { x: 756, y: 180, w: 172, h: 328 }
+      ],
+      switches: [
+        { id: 'sw1', x: 428, y: 228, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 720, y: 82, w: 36, h: 98, currentY: 82, targetY: 82, openY: -40, closedY: 82 }
+      ]
+    },
+    {
+      id: 49,
+      name: "The Crucible of Mastery",
+      hint: "Penultimate trial: coordinate shell ejections on the entrance pad and high crucible shelf to breach the upper sanctum!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 830, y: 156, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 220, y: 32, w: 36, h: 320 },
+        { x: 290, y: 420, w: 90, h: 88 },
+        { x: 420, y: 340, w: 100, h: 168 },
+        { x: 540, y: 250, w: 90, h: 24 },
+        { x: 680, y: 32, w: 36, h: 60 },
+        { x: 680, y: 210, w: 36, h: 298 },
+        { x: 716, y: 210, w: 212, h: 298 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 563, y: 238, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 220, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 680, y: 92, w: 36, h: 118, currentY: 92, targetY: 92, openY: -30, closedY: 92 }
+      ]
+    },
+    {
+      id: 50,
+      name: "The Pantheon of the Core",
+      hint: "The Ultimate Grand Finale! Master every layer, coordinate dual shell placement, and ascend to the Pantheon Throne of Transcendence!",
+      spawn: { x: 70, y: 440 },
+      exit: { x: 820, y: 146, w: 40, h: 54 },
+      solids: [
+        { x: 0, y: 0, w: 960, h: 32 },
+        { x: 0, y: 508, w: 960, h: 32 },
+        { x: 0, y: 0, w: 32, h: 540 },
+        { x: 928, y: 0, w: 32, h: 540 },
+        { x: 210, y: 32, w: 36, h: 320 },
+        { x: 280, y: 410, w: 110, h: 24 },
+        { x: 450, y: 310, w: 120, h: 24 },
+        { x: 300, y: 210, w: 110, h: 24 },
+        { x: 660, y: 32, w: 36, h: 60 },
+        { x: 660, y: 200, w: 36, h: 308 },
+        { x: 696, y: 200, w: 232, h: 308 }
+      ],
+      switches: [
+        { id: 'sw1', x: 90, y: 496, w: 44, h: 12, pressed: false },
+        { id: 'sw2', x: 488, y: 298, w: 44, h: 12, pressed: false }
+      ],
+      doors: [
+        { id: 'gate1', switchId: 'sw1', x: 210, y: 352, w: 36, h: 156, currentY: 352, targetY: 352, openY: 180, closedY: 352 },
+        { id: 'gate2', switchId: 'sw2', x: 660, y: 92, w: 36, h: 108, currentY: 92, targetY: 92, openY: -30, closedY: 92 }
       ]
     }
   ];
@@ -1826,6 +3086,11 @@
     }
 
     updateLevelModal() {
+      const titleElem = document.getElementById('modal-title');
+      if (titleElem) {
+        titleElem.textContent = `SELECT LEVEL (1 – ${LEVELS.length})`;
+      }
+
       const grid = document.getElementById('level-grid');
       if (!grid) return;
       grid.innerHTML = '';
@@ -2477,7 +3742,7 @@
         ctx.textAlign = 'center';
         ctx.fillStyle = '#f97316';
         ctx.font = 'bold 36px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-        ctx.fillText('🎉 ALL 6 LEVELS COMPLETED!', CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 - 44);
+        ctx.fillText(`🎉 ALL ${LEVELS.length} LEVELS COMPLETED!`, CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 - 44);
 
         ctx.fillStyle = '#f8fafc';
         ctx.font = '17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
