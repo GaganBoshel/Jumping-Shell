@@ -1,6 +1,6 @@
 {
   "name": "Jumping Shell",
-  "description": "A puzzle-platformer across 50 levels where you eject nested shells for mid-air boosts and use them as physical blocks to solve puzzles, with full mobile and tablet support.",
+  "description": "A puzzle-platformer across 100 levels where you eject nested shells for mid-air boosts and use them as physical blocks to solve puzzles, with full mobile and tablet support.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
