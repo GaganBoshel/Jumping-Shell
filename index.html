@@ -1014,7 +1014,7 @@
       name: "The High Wall",
       hint: "Jump with [W] or [SPACE], then press [SPACE] in mid-air to double-jump and remove your shell for a high boost!",
       spawn: {"x":96,"y":440},
-      exit: {"x":860,"y":220,"w":40,"h":54},
+      exit: {"x":860,"y":216,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
@@ -1261,68 +1261,68 @@
       name: "The Pendulum Chasm",
       hint: "Leap across the chasm, drop a shell on the center pillar switch to lift the barrier, then launch to the sanctuary!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":170,"y":380,"w":140,"h":24},
-        {"x":370,"y":280,"w":90,"h":24},
-        {"x":480,"y":180,"w":120,"h":24},
-        {"x":670,"y":32,"w":36,"h":320},
-        {"x":750,"y":210,"w":178,"h":298}
+        {"x":160,"y":420,"w":124,"h":22},
+        {"x":310,"y":350,"w":124,"h":22},
+        {"x":482,"y":280,"w":134,"h":22},
+        {"x":650,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":505,"y":168,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":512,"y":268,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":670,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":650,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 12,
       name: "Dual Switch Vault",
       hint: "Weigh the left high switch to unlock the right chamber, activate the second switch, then access the center vault!",
-      spawn: {"x":70,"y":228},
-      exit: {"x":850,"y":228,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":288,"w":212,"h":220},
-        {"x":412,"y":362,"w":150,"h":146},
-        {"x":658,"y":288,"w":270,"h":220},
-        {"x":658,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":184,"h":178},
+        {"x":395,"y":410,"w":130,"h":98},
+        {"x":572,"y":420,"w":60,"h":88},
+        {"x":652,"y":330,"w":276,"h":178},
+        {"x":712,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":437,"y":350,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":420,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":658,"y":188,"w":36,"h":100,"currentY":188,"targetY":188,"openY":30,"closedY":188}
+        {"id":"gate1","switchId":"sw1","x":712,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 13,
       name: "The Trench & Tower",
       hint: "Escape the deep trench with a shell boost, scale the central spire to press the summit switch, and unlock the gate!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":132,"y":437,"w":90,"h":71},
-        {"x":244,"y":32,"w":290,"h":440},
-        {"x":692,"y":32,"w":36,"h":320}
+        {"x":154,"y":440,"w":70,"h":68},
+        {"x":264,"y":32,"w":316,"h":416},
+        {"x":690,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":574,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":374,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":692,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":690,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -1330,48 +1330,50 @@
       name: "The Low Crawl Vent",
       hint: "Eject a shell on the switch to hold open the gate and shrink yourself down to crawl through the vent. Then recall [E/R] to jump to the exit!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":188,"y":342,"w":50,"h":166},
-        {"x":350,"y":32,"w":50,"h":232},
-        {"x":528,"y":292,"w":50,"h":216},
-        {"x":700,"y":32,"w":36,"h":310}
+        {"x":146,"y":450,"w":60,"h":58},
+        {"x":221,"y":400,"w":50,"h":108},
+        {"x":296,"y":420,"w":60,"h":88},
+        {"x":371,"y":360,"w":50,"h":148},
+        {"x":680,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":531,"y":280,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":374,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":700,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":680,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 15,
       name: "Stairway to the Stars",
       hint: "Ascend the stairway, drop a shell on the Step 2 switch to lift the barrier, then walk through to the exit portal!",
-      spawn: {"x":70,"y":358},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":418,"w":110,"h":24},
-        {"x":230,"y":304,"w":100,"h":22},
-        {"x":364,"y":296,"w":100,"h":22},
-        {"x":530,"y":314,"w":110,"h":22},
-        {"x":664,"y":214,"w":100,"h":22},
-        {"x":750,"y":32,"w":36,"h":210},
-        {"x":790,"y":260,"w":138,"h":24}
+        {"x":32,"y":440,"w":125,"h":68},
+        {"x":177,"y":380,"w":100,"h":128},
+        {"x":297,"y":320,"w":110,"h":188},
+        {"x":427,"y":260,"w":100,"h":248},
+        {"x":547,"y":200,"w":163,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":558,"y":302,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":327,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":750,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -1379,72 +1381,70 @@
       name: "Crossfire Gates",
       hint: "Drop a shell on the left switch to enter the airlock, then use the airlock shelf switch to unlock the final gate!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":312,"y":224,"w":44,"h":284},
-        {"x":312,"y":32,"w":44,"h":80},
-        {"x":548,"y":224,"w":44,"h":284},
-        {"x":548,"y":32,"w":44,"h":80},
-        {"x":694,"y":32,"w":36,"h":210},
-        {"x":756,"y":240,"w":172,"h":268}
+        {"x":317,"y":32,"w":36,"h":320},
+        {"x":392,"y":450,"w":70,"h":58},
+        {"x":482,"y":390,"w":85,"h":118},
+        {"x":597,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":406,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":502,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":694,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":317,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":597,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 17,
       name: "The Heavyweight Elevator",
       hint: "Weigh the switch to lower the elevator platform. Stand on the platform, then recall your shell [E/R] to ride it up!",
-      spawn: {"x":80,"y":152},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":222,"w":326,"h":28},
-        {"x":496,"y":222,"w":432,"h":28},
-        {"x":678,"y":308,"w":40,"h":200}
+        {"x":32,"y":240,"w":346,"h":28},
+        {"x":488,"y":240,"w":440,"h":28},
+        {"x":685,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":216,"y":210,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":678,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":685,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 18,
       name: "Labyrinth of Ducts",
       hint: "Drop your outer shell on Switch 1 to open Gate 1 and fit Duct A, then drop your middle shell on Switch 2 to clear Duct B!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":160,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":128,"y":360,"w":160,"h":24},
-        {"x":680,"y":360,"w":160,"h":24},
-        {"x":392,"y":220,"w":160,"h":24},
-        {"x":362,"y":32,"w":36,"h":190},
-        {"x":552,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":163,"y":348,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":715,"y":348,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":362,"y":222,"w":36,"h":80,"currentY":222,"targetY":222,"openY":100,"closedY":222},
-        {"id":"gate2","switchId":"sw2","x":552,"y":222,"w":36,"h":80,"currentY":222,"targetY":222,"openY":100,"closedY":222}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -1452,44 +1452,49 @@
       name: "Skyline Leap",
       hint: "Ascend the sky islands, drop a shell on the switch to retract the citadel gate, then leap across to the portal!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":252,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":210,"y":312,"w":540,"h":28},
-        {"x":378,"y":340,"w":44,"h":168},
-        {"x":784,"y":312,"w":144,"h":196}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":510,"y":440,"w":70,"h":68},
+        {"x":590,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":490,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":754,"y":142,"w":36,"h":170,"currentY":142,"targetY":142,"openY":-20,"closedY":142}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 20,
       name: "The Grand Sanctuary",
       hint: "Drop Shell 1 on Switch 1 to open the Cathedral, then leap up the terraces and drop Shell 2 on Switch 2 to breach the Sanctuary!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":120,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":410,"w":712,"h":24},
-        {"x":212,"y":220,"w":716,"h":24},
-        {"x":32,"y":180,"w":234,"h":24},
-        {"x":276,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":208,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":276,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -1497,68 +1502,68 @@
       name: "The Vault of Leaps",
       hint: "Leap across the pillars, drop a shell on the floating switch to open the vault gate, then boost across to the exit!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":226,"y":392,"w":100,"h":24},
-        {"x":330,"y":292,"w":110,"h":24},
-        {"x":508,"y":192,"w":100,"h":24},
-        {"x":650,"y":32,"w":36,"h":320},
-        {"x":730,"y":210,"w":198,"h":298}
+        {"x":202,"y":424,"w":100,"h":22},
+        {"x":331,"y":354,"w":100,"h":22},
+        {"x":470,"y":284,"w":110,"h":22},
+        {"x":660,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":533,"y":180,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":500,"y":272,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":650,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":660,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 22,
       name: "Twin Columns",
       hint: "Eject a shell on the Left Tower switch to raise the center elevator platform and unlock the sanctuary!",
-      spawn: {"x":70,"y":216},
-      exit: {"x":850,"y":216,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":276,"w":180,"h":232},
-        {"x":380,"y":374,"w":110,"h":134},
-        {"x":674,"y":276,"w":254,"h":232},
-        {"x":674,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":160,"h":178},
+        {"x":405,"y":410,"w":106,"h":98},
+        {"x":560,"y":420,"w":60,"h":88},
+        {"x":640,"y":330,"w":288,"h":178},
+        {"x":700,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":405,"y":362,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":430,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":674,"y":176,"w":36,"h":100,"currentY":176,"targetY":176,"openY":30,"closedY":176}
+        {"id":"gate1","switchId":"sw1","x":700,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 23,
       name: "The Zigzag Squeeze",
       hint: "Drop Shell 1 on Switch 1 to shrink and crawl the lower vent, then climb the atrium steps and weigh Switch 2 to exit!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":116,"y":416,"w":70,"h":92},
-        {"x":212,"y":32,"w":250,"h":440},
-        {"x":708,"y":32,"w":36,"h":320}
+        {"x":142,"y":440,"w":70,"h":68},
+        {"x":252,"y":32,"w":292,"h":416},
+        {"x":700,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":502,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":362,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":708,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":700,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -1566,48 +1571,50 @@
       name: "Orbital Suspension",
       hint: "Leap across the floating islands, drop a shell on Island 2 to retract the sky barrier, and land in the sanctuary!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":244,"y":354,"w":50,"h":154},
-        {"x":366,"y":32,"w":50,"h":244},
-        {"x":584,"y":304,"w":50,"h":204},
-        {"x":716,"y":32,"w":36,"h":310}
+        {"x":188,"y":450,"w":60,"h":58},
+        {"x":263,"y":400,"w":50,"h":108},
+        {"x":338,"y":420,"w":60,"h":88},
+        {"x":413,"y":360,"w":50,"h":148},
+        {"x":690,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":587,"y":292,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":416,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":716,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":690,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 25,
       name: "The Micro Duct Express",
       hint: "Drop both shells on the starting switches to shed down to your tiny core, open both gates, and slip through the micro duct!",
-      spawn: {"x":70,"y":352},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":412,"w":110,"h":24},
-        {"x":198,"y":316,"w":130,"h":22},
-        {"x":380,"y":284,"w":130,"h":22},
-        {"x":498,"y":326,"w":140,"h":22},
-        {"x":680,"y":226,"w":130,"h":22},
-        {"x":734,"y":32,"w":36,"h":210},
-        {"x":782,"y":260,"w":146,"h":24}
+        {"x":32,"y":440,"w":113,"h":68},
+        {"x":165,"y":380,"w":100,"h":128},
+        {"x":285,"y":320,"w":110,"h":188},
+        {"x":415,"y":260,"w":100,"h":248},
+        {"x":535,"y":200,"w":175,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":526,"y":314,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":315,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":734,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -1615,72 +1622,70 @@
       name: "The Spire of Echoes",
       hint: "Scale the ascending spires, drop a shell on Pillar 2 to lift the summit gate, then leap across to the Sanctuary Peak!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":280,"y":212,"w":44,"h":296},
-        {"x":280,"y":32,"w":44,"h":80},
-        {"x":508,"y":212,"w":44,"h":296},
-        {"x":508,"y":32,"w":44,"h":80},
-        {"x":674,"y":32,"w":36,"h":210},
-        {"x":740,"y":240,"w":188,"h":268}
+        {"x":305,"y":32,"w":36,"h":320},
+        {"x":380,"y":450,"w":70,"h":58},
+        {"x":470,"y":390,"w":85,"h":118},
+        {"x":585,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":390,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":490,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":674,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":305,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":585,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 27,
       name: "Airlock Sequence",
       hint: "Weigh Switch 1 to breach Airlock 1, hop onto the shelf to weigh Switch 2, then recall your shells to jump to the high exit!",
-      spawn: {"x":80,"y":140},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":210,"w":382,"h":28},
-        {"x":512,"y":210,"w":416,"h":28},
-        {"x":706,"y":320,"w":40,"h":188}
+        {"x":32,"y":240,"w":367,"h":28},
+        {"x":509,"y":240,"w":419,"h":28},
+        {"x":690,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":272,"y":198,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":706,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":690,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 28,
       name: "The Great Chasm Bastion",
       hint: "Weigh Switch 1 with Shell 1 to open the canyon gate. Scale the canyon pillars to weigh Switch 2, then leap across to the sanctuary!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":202,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":96,"y":318,"w":120,"h":24},
-        {"x":720,"y":318,"w":120,"h":24},
-        {"x":384,"y":262,"w":160,"h":24},
-        {"x":354,"y":32,"w":36,"h":190},
-        {"x":544,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":131,"y":306,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":755,"y":306,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":354,"y":264,"w":36,"h":80,"currentY":264,"targetY":264,"openY":100,"closedY":264},
-        {"id":"gate2","switchId":"sw2","x":544,"y":264,"w":36,"h":80,"currentY":264,"targetY":264,"openY":100,"closedY":264}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -1688,44 +1693,49 @@
       name: "The Sky Citadel",
       hint: "Weigh Step 2 with Shell 1 to lift the Citadel Portcullis, hop to Island 3, and boost directly into the Sky Citadel!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":240,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":178,"y":300,"w":572,"h":28},
-        {"x":394,"y":328,"w":44,"h":180},
-        {"x":792,"y":300,"w":136,"h":208}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":498,"y":440,"w":70,"h":68},
+        {"x":578,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":474,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":762,"y":130,"w":36,"h":170,"currentY":130,"targetY":130,"openY":-20,"closedY":130}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 30,
       name: "The Eternal Core",
       hint: "Weigh Switch 1 to open the Inner Gateway, scale the Cathedral terraces to weigh Switch 2, and boost to the Eternal Portal!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":108,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":398,"w":740,"h":24},
-        {"x":228,"y":232,"w":700,"h":24},
-        {"x":32,"y":168,"w":290,"h":24},
-        {"x":332,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":220,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":332,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -1733,68 +1743,68 @@
       name: "The Resonant Steps",
       hint: "Hop up the stepping pillars, eject Shell 1 onto Pillar 2 to lift the summit gate, and leap to the Sanctuary Peak!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":194,"y":404,"w":130,"h":24},
-        {"x":346,"y":304,"w":95,"h":24},
-        {"x":492,"y":204,"w":115,"h":24},
-        {"x":658,"y":32,"w":36,"h":320},
-        {"x":738,"y":210,"w":190,"h":298}
+        {"x":178,"y":428,"w":118,"h":22},
+        {"x":319,"y":358,"w":118,"h":22},
+        {"x":475,"y":288,"w":128,"h":22},
+        {"x":654,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":517,"y":192,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":505,"y":276,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":658,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":654,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 32,
       name: "The Double Lock Arch",
       hint: "Weigh Switch 1 to open Chamber 1, then weigh Switch 2 to unlock the sanctuary arch!",
-      spawn: {"x":70,"y":258},
-      exit: {"x":850,"y":258,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":318,"w":236,"h":190},
-        {"x":436,"y":332,"w":140,"h":176},
-        {"x":690,"y":318,"w":238,"h":190},
-        {"x":690,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":202,"h":178},
+        {"x":415,"y":410,"w":124,"h":98},
+        {"x":581,"y":420,"w":60,"h":88},
+        {"x":661,"y":330,"w":267,"h":178},
+        {"x":721,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":461,"y":320,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":690,"y":218,"w":36,"h":100,"currentY":218,"targetY":218,"openY":30,"closedY":218}
+        {"id":"gate1","switchId":"sw1","x":721,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 33,
       name: "The Gravity Well",
       hint: "Hop across the suspended terraces, drop a shell on Terrace 2, and enter the high altar!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":100,"y":422,"w":85,"h":86},
-        {"x":180,"y":32,"w":280,"h":440},
-        {"x":668,"y":32,"w":36,"h":320}
+        {"x":130,"y":440,"w":70,"h":68},
+        {"x":240,"y":32,"w":310,"h":416},
+        {"x":675,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":500,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":350,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":668,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":675,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -1802,48 +1812,50 @@
       name: "The Micro Passage",
       hint: "Eject a shell on Switch 1 to shrink down to Layer 2, crawl under the low conduit, and reach the exit!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":212,"y":366,"w":50,"h":142},
-        {"x":382,"y":32,"w":50,"h":256},
-        {"x":552,"y":316,"w":50,"h":192},
-        {"x":732,"y":32,"w":36,"h":310}
+        {"x":164,"y":450,"w":60,"h":58},
+        {"x":239,"y":400,"w":50,"h":108},
+        {"x":314,"y":420,"w":60,"h":88},
+        {"x":389,"y":360,"w":50,"h":148},
+        {"x":700,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":555,"y":304,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":392,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":732,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":700,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 35,
       name: "The Floating Bastion",
       hint: "Ascend the bastion ramparts and eject a shell onto the floating platform to unlock the high sanctum!",
-      spawn: {"x":70,"y":346},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":406,"w":110,"h":24},
-        {"x":254,"y":328,"w":90,"h":22},
-        {"x":340,"y":272,"w":90,"h":22},
-        {"x":554,"y":338,"w":100,"h":22},
-        {"x":640,"y":238,"w":90,"h":22},
-        {"x":762,"y":32,"w":36,"h":210},
-        {"x":796,"y":260,"w":132,"h":24}
+        {"x":32,"y":440,"w":134,"h":68},
+        {"x":186,"y":380,"w":100,"h":128},
+        {"x":306,"y":320,"w":110,"h":188},
+        {"x":436,"y":260,"w":100,"h":248},
+        {"x":556,"y":200,"w":154,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":582,"y":326,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":336,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":762,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -1851,72 +1863,70 @@
       name: "The Dual Aqueduct",
       hint: "Scale Aqueduct Pillar 1 and Pillar 2, ejecting shells to open each successive security lock!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":248,"y":200,"w":44,"h":308},
-        {"x":248,"y":32,"w":44,"h":80},
-        {"x":524,"y":200,"w":44,"h":308},
-        {"x":524,"y":32,"w":44,"h":80},
-        {"x":682,"y":32,"w":36,"h":210},
-        {"x":724,"y":240,"w":204,"h":268}
+        {"x":293,"y":32,"w":36,"h":320},
+        {"x":368,"y":450,"w":70,"h":58},
+        {"x":458,"y":390,"w":85,"h":118},
+        {"x":573,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":374,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":478,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":682,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":293,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":573,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 37,
       name: "The Tower of Wings",
       hint: "Use the upward thrust of a shell ejection to reach the high shelf, trigger the switch, and enter the balcony!",
-      spawn: {"x":80,"y":182},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":252,"w":350,"h":28},
-        {"x":528,"y":252,"w":400,"h":28},
-        {"x":690,"y":278,"w":40,"h":230}
+        {"x":32,"y":240,"w":355,"h":28},
+        {"x":497,"y":240,"w":431,"h":28},
+        {"x":695,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":240,"y":240,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":690,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":695,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 38,
       name: "The Symmetrical Vault",
       hint: "Leave a shell on the entrance pad to raise Gate 1, then climb the central pillar to unlock the inner sanctum!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":190,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":152,"y":330,"w":150,"h":24},
-        {"x":704,"y":330,"w":150,"h":24},
-        {"x":398,"y":250,"w":160,"h":24},
-        {"x":368,"y":32,"w":36,"h":190},
-        {"x":558,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":187,"y":318,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":739,"y":318,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":368,"y":252,"w":36,"h":80,"currentY":252,"targetY":252,"openY":100,"closedY":252},
-        {"id":"gate2","switchId":"sw2","x":558,"y":252,"w":36,"h":80,"currentY":252,"targetY":252,"openY":100,"closedY":252}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -1924,44 +1934,49 @@
       name: "The Sky Bridges",
       hint: "Traverse the suspended sky bridges across the great chasm, triggering the sky barrier to access the cliff!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":228,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":146,"y":288,"w":604,"h":28},
-        {"x":410,"y":316,"w":44,"h":192},
-        {"x":800,"y":288,"w":128,"h":220}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":486,"y":440,"w":70,"h":68},
+        {"x":566,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":458,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":770,"y":118,"w":36,"h":170,"currentY":118,"targetY":118,"openY":-20,"closedY":118}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 40,
       name: "The Fortress of Reflection",
       hint: "A grand fortress: weigh Switch 1 at the courtyard gates, scale the gallery to trigger Switch 2, and enter the Keep!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":96,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":386,"w":724,"h":24},
-        {"x":188,"y":244,"w":740,"h":24},
-        {"x":32,"y":156,"w":258,"h":24},
-        {"x":300,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":232,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":300,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -1969,68 +1984,68 @@
       name: "The Pendulum Corridors",
       hint: "Shed your shell to slip beneath the low conduit, leap up the stepping pillar, and open the escape airlock!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":250,"y":362,"w":160,"h":24},
-        {"x":362,"y":262,"w":80,"h":24},
-        {"x":520,"y":162,"w":130,"h":24},
-        {"x":666,"y":32,"w":36,"h":320},
-        {"x":746,"y":210,"w":182,"h":298}
+        {"x":220,"y":414,"w":136,"h":22},
+        {"x":340,"y":344,"w":136,"h":22},
+        {"x":480,"y":274,"w":146,"h":22},
+        {"x":665,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":545,"y":150,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":510,"y":262,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":666,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":665,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 42,
       name: "The Zenith Stair",
       hint: "Climb the monumental steps, drop a shell on Step 3, and stride through the summit portal!",
-      spawn: {"x":70,"y":246},
-      exit: {"x":850,"y":246,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":306,"w":204,"h":202},
-        {"x":404,"y":344,"w":100,"h":164},
-        {"x":650,"y":306,"w":278,"h":202},
-        {"x":650,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":178,"h":178},
+        {"x":390,"y":410,"w":100,"h":98},
+        {"x":569,"y":420,"w":60,"h":88},
+        {"x":649,"y":330,"w":279,"h":178},
+        {"x":709,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":429,"y":332,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":415,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":650,"y":206,"w":36,"h":100,"currentY":206,"targetY":206,"openY":30,"closedY":206}
+        {"id":"gate1","switchId":"sw1","x":709,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 43,
       name: "The Cascade Chamber",
       hint: "Navigate the tiered waterfall chambers, weighting each lock pad to reveal the destination!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":128,"y":428,"w":65,"h":80},
-        {"x":236,"y":32,"w":240,"h":440},
-        {"x":684,"y":32,"w":36,"h":320}
+        {"x":151,"y":440,"w":70,"h":68},
+        {"x":261,"y":32,"w":286,"h":416},
+        {"x":685,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":516,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":371,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":684,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":685,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -2038,48 +2053,50 @@
       name: "The High Pillars of Solitude",
       hint: "Ascend the sheer monolithic pillars across the chasm, weighting Pillar 2 to unlock the high plateau!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":180,"y":378,"w":50,"h":130},
-        {"x":398,"y":32,"w":50,"h":268},
-        {"x":520,"y":328,"w":50,"h":180},
-        {"x":748,"y":32,"w":36,"h":310}
+        {"x":140,"y":450,"w":60,"h":58},
+        {"x":215,"y":400,"w":50,"h":108},
+        {"x":290,"y":420,"w":60,"h":88},
+        {"x":365,"y":360,"w":50,"h":148},
+        {"x":710,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":523,"y":316,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":368,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":748,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":710,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 45,
       name: "The Micro Matrix",
       hint: "Eject two nested shells on the start switches to reduce down to your tiny core and slip through the ultra-narrow crawlway!",
-      spawn: {"x":70,"y":340},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":400,"w":110,"h":24},
-        {"x":222,"y":340,"w":120,"h":22},
-        {"x":356,"y":260,"w":120,"h":22},
-        {"x":522,"y":350,"w":130,"h":22},
-        {"x":656,"y":250,"w":120,"h":22},
-        {"x":746,"y":32,"w":36,"h":210},
-        {"x":788,"y":260,"w":140,"h":24}
+        {"x":32,"y":440,"w":122,"h":68},
+        {"x":174,"y":380,"w":100,"h":128},
+        {"x":294,"y":320,"w":110,"h":188},
+        {"x":424,"y":260,"w":100,"h":248},
+        {"x":544,"y":200,"w":166,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":550,"y":338,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":324,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":746,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2087,72 +2104,70 @@
       name: "The Spire of Dawn",
       hint: "Scale the dawn terraces to the floating switch island, open the summit gate, and reach the sunrise!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":304,"y":242,"w":44,"h":266},
-        {"x":304,"y":32,"w":44,"h":80},
-        {"x":540,"y":242,"w":44,"h":266},
-        {"x":540,"y":32,"w":44,"h":80},
-        {"x":690,"y":32,"w":36,"h":210},
-        {"x":752,"y":240,"w":176,"h":268}
+        {"x":314,"y":32,"w":36,"h":320},
+        {"x":389,"y":450,"w":70,"h":58},
+        {"x":479,"y":390,"w":85,"h":118},
+        {"x":594,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":402,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":499,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":690,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":314,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":594,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 47,
       name: "The Labyrinth of Gates",
       hint: "A dual-level labyrinth: trigger Gate 1 on the floor, hop across the mid-air islands to trigger Gate 2, and break free!",
-      spawn: {"x":80,"y":170},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":240,"w":318,"h":28},
-        {"x":488,"y":240,"w":440,"h":28},
-        {"x":674,"y":290,"w":40,"h":218}
+        {"x":32,"y":240,"w":343,"h":28},
+        {"x":485,"y":240,"w":443,"h":28},
+        {"x":682,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":208,"y":228,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":674,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":682,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 48,
       name: "The Astral Overpass",
       hint: "Ascend across soaring overpass towers, drop a shell on Tower 2 to open the sky barrier, and land at the Astral Sanctum!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":178,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":120,"y":342,"w":180,"h":24},
-        {"x":688,"y":342,"w":180,"h":24},
-        {"x":390,"y":238,"w":160,"h":24},
-        {"x":360,"y":32,"w":36,"h":190},
-        {"x":550,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":155,"y":330,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":723,"y":330,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":360,"y":240,"w":36,"h":80,"currentY":240,"targetY":240,"openY":100,"closedY":240},
-        {"id":"gate2","switchId":"sw2","x":550,"y":240,"w":36,"h":80,"currentY":240,"targetY":240,"openY":100,"closedY":240}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -2160,44 +2175,49 @@
       name: "The Crucible of Mastery",
       hint: "Penultimate trial: coordinate shell ejections on the entrance pad and high crucible shelf to breach the upper sanctum!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":216,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":202,"y":276,"w":548,"h":28},
-        {"x":370,"y":304,"w":44,"h":204},
-        {"x":780,"y":276,"w":148,"h":232}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":507,"y":440,"w":70,"h":68},
+        {"x":587,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":486,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":750,"y":106,"w":36,"h":170,"currentY":106,"targetY":106,"openY":-20,"closedY":106}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 50,
       name: "The Pantheon of the Core",
       hint: "The Ultimate Grand Finale! Master every layer, coordinate dual shell placement, and ascend to the Pantheon Throne of Transcendence!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":138,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":428,"w":708,"h":24},
-        {"x":204,"y":202,"w":724,"h":24},
-        {"x":32,"y":198,"w":226,"h":24},
-        {"x":268,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":190,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":268,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2205,68 +2225,68 @@
       name: "The Pendulum Gate",
       hint: "Drop a shell onto the floor switch to lift the pendulum gate, then leap across the gear platforms before it shuts!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":218,"y":374,"w":120,"h":24},
-        {"x":378,"y":274,"w":100,"h":24},
-        {"x":504,"y":174,"w":110,"h":24},
-        {"x":674,"y":32,"w":36,"h":320},
-        {"x":754,"y":210,"w":174,"h":298}
+        {"x":196,"y":418,"w":112,"h":22},
+        {"x":328,"y":348,"w":112,"h":22},
+        {"x":485,"y":278,"w":122,"h":22},
+        {"x":659,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":529,"y":162,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":515,"y":266,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":674,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":659,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 52,
       name: "Gearshift Chasm",
       hint: "Cross the wide gear chasm using mid-air double-jump boosts to gain altitude and land upon the high cog platforms!",
-      spawn: {"x":70,"y":234},
-      exit: {"x":850,"y":234,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":294,"w":260,"h":214},
-        {"x":460,"y":356,"w":130,"h":152},
-        {"x":666,"y":294,"w":262,"h":214},
-        {"x":666,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":220,"h":178},
+        {"x":400,"y":410,"w":118,"h":98},
+        {"x":590,"y":420,"w":60,"h":88},
+        {"x":670,"y":330,"w":258,"h":178},
+        {"x":730,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":485,"y":344,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":425,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":666,"y":194,"w":36,"h":100,"currentY":194,"targetY":194,"openY":30,"closedY":194}
+        {"id":"gate1","switchId":"sw1","x":730,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 53,
       name: "The Triple Lock Atrium",
       hint: "Two switches lock two gates! Place Shell 1 on the floor switch, ascend to the gear terrace to weigh Switch 2, and breach the atrium!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":112,"y":434,"w":80,"h":74},
-        {"x":204,"y":32,"w":270,"h":440},
-        {"x":700,"y":32,"w":36,"h":320}
+        {"x":139,"y":440,"w":70,"h":68},
+        {"x":249,"y":32,"w":304,"h":416},
+        {"x":695,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":514,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":359,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":700,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":695,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -2274,48 +2294,50 @@
       name: "Ventilation Shaft Beta",
       hint: "Eject down to your inner core to crawl through the narrow 24px steam shaft, hit the pressure plate, then recall to leap!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":236,"y":390,"w":50,"h":118},
-        {"x":358,"y":32,"w":50,"h":280},
-        {"x":576,"y":340,"w":50,"h":168},
-        {"x":708,"y":32,"w":36,"h":310}
+        {"x":182,"y":450,"w":60,"h":58},
+        {"x":257,"y":400,"w":50,"h":108},
+        {"x":332,"y":420,"w":60,"h":88},
+        {"x":407,"y":360,"w":50,"h":148},
+        {"x":685,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":579,"y":328,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":410,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":708,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":685,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 55,
       name: "The Counterweight Tower",
       hint: "Weigh down the high terrace switch to lower the counterweight gate at the summit, then recall your shells to jump through!",
-      spawn: {"x":70,"y":361},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":421,"w":110,"h":24},
-        {"x":190,"y":298,"w":150,"h":22},
-        {"x":372,"y":302,"w":150,"h":22},
-        {"x":490,"y":308,"w":160,"h":22},
-        {"x":672,"y":208,"w":150,"h":22},
-        {"x":730,"y":32,"w":36,"h":210},
-        {"x":780,"y":260,"w":148,"h":24}
+        {"x":32,"y":440,"w":110,"h":68},
+        {"x":162,"y":380,"w":100,"h":128},
+        {"x":282,"y":320,"w":110,"h":188},
+        {"x":412,"y":260,"w":100,"h":248},
+        {"x":532,"y":200,"w":178,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":518,"y":296,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":312,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":730,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2323,72 +2345,70 @@
       name: "Stepping Stones of Steam",
       hint: "Eject a shell on the ground to use as an elevated stepping block, reach the high steam pipe, and boost to the exit!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":272,"y":230,"w":44,"h":278},
-        {"x":272,"y":32,"w":44,"h":80},
-        {"x":500,"y":230,"w":44,"h":278},
-        {"x":500,"y":32,"w":44,"h":80},
-        {"x":670,"y":32,"w":36,"h":210},
-        {"x":736,"y":240,"w":192,"h":268}
+        {"x":302,"y":32,"w":36,"h":320},
+        {"x":377,"y":450,"w":70,"h":58},
+        {"x":467,"y":390,"w":85,"h":118},
+        {"x":582,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":386,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":487,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":670,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":302,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":582,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 57,
       name: "The Synchronized Dual Vault",
       hint: "Coordinate sequential shell ejections: trigger Gate 1 from the floor, then leap across the gears to weigh Switch 2!",
-      spawn: {"x":80,"y":158},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":228,"w":374,"h":28},
-        {"x":504,"y":228,"w":424,"h":28},
-        {"x":702,"y":302,"w":40,"h":206}
+        {"x":32,"y":240,"w":364,"h":28},
+        {"x":506,"y":240,"w":422,"h":28},
+        {"x":687,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":264,"y":216,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":702,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":687,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 58,
       name: "Pressure & Piston",
       hint: "Boost up to the high floating shelf to weigh Switch 1, which lowers the subterranean piston gate below!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":166,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":88,"y":354,"w":140,"h":24},
-        {"x":672,"y":354,"w":140,"h":24},
-        {"x":382,"y":226,"w":160,"h":24},
-        {"x":352,"y":32,"w":36,"h":190},
-        {"x":542,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":123,"y":342,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":707,"y":342,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":352,"y":228,"w":36,"h":80,"currentY":228,"targetY":228,"openY":100,"closedY":228},
-        {"id":"gate2","switchId":"sw2","x":542,"y":228,"w":36,"h":80,"currentY":228,"targetY":228,"openY":100,"closedY":228}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -2396,44 +2416,49 @@
       name: "The Clockmaker's Gauntlet",
       hint: "Squeeze through the low crawlway, place your shell on the piston switch, recall, and scale the ascending towers!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":258,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":170,"y":318,"w":580,"h":28},
-        {"x":386,"y":346,"w":44,"h":162},
-        {"x":788,"y":318,"w":140,"h":190}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":495,"y":440,"w":70,"h":68},
+        {"x":575,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":470,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":758,"y":148,"w":36,"h":170,"currentY":148,"targetY":148,"openY":-20,"closedY":148}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 60,
       name: "Titan of the Vault",
       hint: "Chapter 3 Climax! Dual bulkheads block the grand titan vault. Weigh both switches with your shells to ascend to glory!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":126,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":416,"w":736,"h":24},
-        {"x":220,"y":214,"w":708,"h":24},
-        {"x":32,"y":186,"w":282,"h":24},
-        {"x":324,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":202,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":324,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2441,68 +2466,68 @@
       name: "Data Stream Run",
       hint: "A high neon firewall blocks the data channel. Use mid-air double-jump ejection to leap clear over the wall!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":186,"y":386,"w":150,"h":24},
-        {"x":338,"y":286,"w":85,"h":24},
-        {"x":488,"y":186,"w":125,"h":24},
-        {"x":654,"y":32,"w":36,"h":320},
-        {"x":734,"y":210,"w":194,"h":298}
+        {"x":172,"y":422,"w":130,"h":22},
+        {"x":316,"y":352,"w":130,"h":22},
+        {"x":472,"y":282,"w":140,"h":22},
+        {"x":653,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":513,"y":174,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":502,"y":270,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":654,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":653,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 62,
       name: "Micro-Bus Conduit",
       hint: "Shed outer layers to fit into the 24px logic conduit, trigger the firewall switch, and recall your shells to jump to the exit!",
-      spawn: {"x":70,"y":222},
-      exit: {"x":850,"y":222,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":282,"w":228,"h":226},
-        {"x":428,"y":368,"w":160,"h":140},
-        {"x":682,"y":282,"w":246,"h":226},
-        {"x":682,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":196,"h":178},
+        {"x":410,"y":410,"w":136,"h":98},
+        {"x":578,"y":420,"w":60,"h":88},
+        {"x":658,"y":330,"w":270,"h":178},
+        {"x":718,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":453,"y":356,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":435,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":682,"y":182,"w":36,"h":100,"currentY":182,"targetY":182,"openY":30,"closedY":182}
+        {"id":"gate1","switchId":"sw1","x":718,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 63,
       name: "Binary Logic Gates",
       hint: "Two digital logic switches operate Gate 1 and Gate 2. Coordinate your shell drops to unlock the mainframe portal!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":140,"y":440,"w":60,"h":68},
-        {"x":260,"y":32,"w":230,"h":440},
-        {"x":660,"y":32,"w":36,"h":320}
+        {"x":160,"y":440,"w":70,"h":68},
+        {"x":270,"y":32,"w":280,"h":416},
+        {"x":670,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":530,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":380,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":660,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":670,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -2510,48 +2535,50 @@
       name: "The Floating Cache",
       hint: "Execute a mid-air double-jump to land upon the floating memory cache, drop a shell on the switch, and enter the output terminal!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":204,"y":348,"w":50,"h":160},
-        {"x":374,"y":32,"w":50,"h":238},
-        {"x":544,"y":298,"w":50,"h":210},
-        {"x":724,"y":32,"w":36,"h":310}
+        {"x":158,"y":450,"w":60,"h":58},
+        {"x":233,"y":400,"w":50,"h":108},
+        {"x":308,"y":420,"w":60,"h":88},
+        {"x":383,"y":360,"w":50,"h":148},
+        {"x":695,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":547,"y":286,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":386,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":724,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":695,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 65,
       name: "Circuit Siphon",
       hint: "Ascend the stepped circuit nodes, weigh the high bus switch, and leap across to the terminal port!",
-      spawn: {"x":70,"y":355},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":415,"w":110,"h":24},
-        {"x":246,"y":310,"w":110,"h":22},
-        {"x":388,"y":290,"w":110,"h":22},
-        {"x":546,"y":320,"w":120,"h":22},
-        {"x":688,"y":220,"w":110,"h":22},
-        {"x":758,"y":32,"w":36,"h":210},
-        {"x":794,"y":260,"w":134,"h":24}
+        {"x":32,"y":440,"w":131,"h":68},
+        {"x":183,"y":380,"w":100,"h":128},
+        {"x":303,"y":320,"w":110,"h":188},
+        {"x":433,"y":260,"w":100,"h":248},
+        {"x":553,"y":200,"w":157,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":574,"y":308,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":333,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":758,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2559,72 +2586,70 @@
       name: "Sub-Nanometer Duct",
       hint: "Two micro-ducts: shed outer shell to enter Section A, then shed middle shell to crawl through the 22px nano-duct into Section B!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":240,"y":218,"w":44,"h":290},
-        {"x":240,"y":32,"w":44,"h":80},
-        {"x":516,"y":218,"w":44,"h":290},
-        {"x":516,"y":32,"w":44,"h":80},
-        {"x":678,"y":32,"w":36,"h":210},
-        {"x":720,"y":240,"w":208,"h":268}
+        {"x":290,"y":32,"w":36,"h":320},
+        {"x":365,"y":450,"w":70,"h":58},
+        {"x":455,"y":390,"w":85,"h":118},
+        {"x":570,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":370,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":475,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":678,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":290,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":570,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 67,
       name: "Overclocked Spires",
       hint: "Soaring frequency spires require maximal jump boost: time your mid-air double-jump ejection at the peak of your leap!",
-      spawn: {"x":80,"y":146},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":216,"w":342,"h":28},
-        {"x":520,"y":216,"w":408,"h":28},
-        {"x":686,"y":314,"w":40,"h":194}
+        {"x":32,"y":240,"w":352,"h":28},
+        {"x":494,"y":240,"w":434,"h":28},
+        {"x":692,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":232,"y":204,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":686,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":692,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 68,
       name: "The Firewall Maze",
       hint: "Cross-firewall puzzle: weigh Sector 1 switch to open Gate 1, then climb the server stacks to weigh Switch 2 for Gate 2!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":208,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":144,"y":312,"w":170,"h":24},
-        {"x":712,"y":312,"w":170,"h":24},
-        {"x":396,"y":268,"w":160,"h":24},
-        {"x":366,"y":32,"w":36,"h":190},
-        {"x":556,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":179,"y":300,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":747,"y":300,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":366,"y":270,"w":36,"h":80,"currentY":270,"targetY":270,"openY":100,"closedY":270},
-        {"id":"gate2","switchId":"sw2","x":556,"y":270,"w":36,"h":80,"currentY":270,"targetY":270,"openY":100,"closedY":270}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -2632,44 +2657,49 @@
       name: "Quantum Relay",
       hint: "Boost over the high quantum partition, drop a shell on the relay switch, and recall your shell from the terminal floor!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":246,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":138,"y":306,"w":612,"h":28},
-        {"x":402,"y":334,"w":44,"h":174},
-        {"x":796,"y":306,"w":132,"h":202}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":483,"y":440,"w":70,"h":68},
+        {"x":563,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":454,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":766,"y":136,"w":36,"h":170,"currentY":136,"targetY":136,"openY":-20,"closedY":136}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 70,
       name: "Cyber-Core Zenith",
       hint: "Chapter 4 Climax! Penetrate the central mainframe: weigh dual cyber switches, bypass firewalls, and breach the Zenith Core!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":114,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":404,"w":720,"h":24},
-        {"x":180,"y":226,"w":748,"h":24},
-        {"x":32,"y":174,"w":250,"h":24},
-        {"x":292,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":214,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":292,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2677,68 +2707,68 @@
       name: "Grotto of Echoes",
       hint: "Drop a shell into the echoing cavern well to depress the switch and retract the giant stalactite barrier!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":242,"y":398,"w":110,"h":24},
-        {"x":354,"y":298,"w":105,"h":24},
-        {"x":516,"y":198,"w":105,"h":24},
-        {"x":662,"y":32,"w":36,"h":320},
-        {"x":742,"y":210,"w":186,"h":298}
+        {"x":214,"y":426,"w":106,"h":22},
+        {"x":337,"y":356,"w":106,"h":22},
+        {"x":477,"y":286,"w":116,"h":22},
+        {"x":663,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":541,"y":186,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":507,"y":274,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":662,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":663,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 72,
       name: "Stalactite Spires",
       hint: "Natural stone columns rise across the abyss. Bound across them with clean single jumps and double-jump recoveries!",
-      spawn: {"x":70,"y":210},
-      exit: {"x":850,"y":210,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":270,"w":196,"h":238},
-        {"x":396,"y":380,"w":120,"h":128},
-        {"x":698,"y":270,"w":230,"h":238},
-        {"x":698,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":172,"h":178},
+        {"x":420,"y":410,"w":112,"h":98},
+        {"x":566,"y":420,"w":60,"h":88},
+        {"x":646,"y":330,"w":282,"h":178},
+        {"x":706,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":421,"y":368,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":445,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":698,"y":170,"w":36,"h":100,"currentY":170,"targetY":170,"openY":30,"closedY":170}
+        {"id":"gate1","switchId":"sw1","x":706,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 73,
       name: "The Sunken Cistern",
       hint: "Shed your shells to crawl under the low cavern waterline tunnel (24px clearance), hit the valve switch, and swim up to freedom!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":124,"y":419,"w":75,"h":89},
-        {"x":228,"y":32,"w":260,"h":440},
-        {"x":676,"y":32,"w":36,"h":320}
+        {"x":148,"y":440,"w":70,"h":68},
+        {"x":258,"y":32,"w":298,"h":416},
+        {"x":680,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":528,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":368,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":676,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":680,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -2746,48 +2776,50 @@
       name: "Crystal Pillar Ledge",
       hint: "A magnificent crystal pillar stands before the exit. Double-jump boost onto the crystal shelf to depress the cavern switch!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":260,"y":360,"w":50,"h":148},
-        {"x":390,"y":32,"w":50,"h":250},
-        {"x":600,"y":310,"w":50,"h":198},
-        {"x":740,"y":32,"w":36,"h":310}
+        {"x":200,"y":450,"w":60,"h":58},
+        {"x":275,"y":400,"w":50,"h":108},
+        {"x":350,"y":420,"w":60,"h":88},
+        {"x":425,"y":360,"w":50,"h":148},
+        {"x":705,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":603,"y":298,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":428,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":740,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":705,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 75,
       name: "The Underground River",
       hint: "A wide subterranean trench bars passage. Drop an ejected shell block as a mid-air stepping stone to bridge the gap!",
-      spawn: {"x":70,"y":349},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":409,"w":110,"h":24},
-        {"x":214,"y":322,"w":140,"h":22},
-        {"x":348,"y":278,"w":140,"h":22},
-        {"x":514,"y":332,"w":150,"h":22},
-        {"x":648,"y":232,"w":140,"h":22},
-        {"x":742,"y":32,"w":36,"h":210},
-        {"x":786,"y":260,"w":142,"h":24}
+        {"x":32,"y":440,"w":119,"h":68},
+        {"x":171,"y":380,"w":100,"h":128},
+        {"x":291,"y":320,"w":110,"h":188},
+        {"x":421,"y":260,"w":100,"h":248},
+        {"x":541,"y":200,"w":169,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":542,"y":320,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":321,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":742,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2795,72 +2827,70 @@
       name: "Chamber of Fossils",
       hint: "Dual ancient stone gates guard the fossil vault. Place shells on both lower and upper pedestals to breach the sanctum!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":296,"y":206,"w":44,"h":302},
-        {"x":296,"y":32,"w":44,"h":80},
-        {"x":532,"y":206,"w":44,"h":302},
-        {"x":532,"y":32,"w":44,"h":80},
-        {"x":686,"y":32,"w":36,"h":210},
-        {"x":748,"y":240,"w":180,"h":268}
+        {"x":311,"y":32,"w":36,"h":320},
+        {"x":386,"y":450,"w":70,"h":58},
+        {"x":476,"y":390,"w":85,"h":118},
+        {"x":591,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":398,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":496,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":686,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":311,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":591,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 77,
       name: "The Deep Crevasse",
       hint: "Leap over the abyss, drop your shell into the crevasse switch, and ride the elevator column into the upper tunnel!",
-      spawn: {"x":80,"y":188},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":258,"w":310,"h":28},
-        {"x":480,"y":258,"w":448,"h":28},
-        {"x":670,"y":272,"w":40,"h":236}
+        {"x":32,"y":240,"w":340,"h":28},
+        {"x":482,"y":240,"w":446,"h":28},
+        {"x":680,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":200,"y":246,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":670,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":680,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 78,
       name: "Obsidian Portcullis",
       hint: "Massive obsidian slabs block each side of the cavern. Weigh both switches to retract the slabs and proceed!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":196,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":112,"y":324,"w":130,"h":24},
-        {"x":696,"y":324,"w":130,"h":24},
-        {"x":388,"y":256,"w":160,"h":24},
-        {"x":358,"y":32,"w":36,"h":190},
-        {"x":548,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":147,"y":312,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":731,"y":312,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":358,"y":258,"w":36,"h":80,"currentY":258,"targetY":258,"openY":100,"closedY":258},
-        {"id":"gate2","switchId":"sw2","x":548,"y":258,"w":36,"h":80,"currentY":258,"targetY":258,"openY":100,"closedY":258}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -2868,44 +2898,49 @@
       name: "The Hollow Geode",
       hint: "A vast hollow geode holds a central floating switch. Mid-air double-jump to deposit your shell on the core, then slip through!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":234,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":194,"y":294,"w":556,"h":28},
-        {"x":418,"y":322,"w":44,"h":186},
-        {"x":804,"y":294,"w":124,"h":214}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":504,"y":440,"w":70,"h":68},
+        {"x":584,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":482,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":774,"y":124,"w":36,"h":170,"currentY":124,"targetY":124,"openY":-20,"closedY":124}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 80,
       name: "The Heart of the Deep",
       hint: "Chapter 5 Climax! Plunge into the subterranean magma well: eject shells to cross the basalt pillars, trigger the volcanic valves, and ascend to the surface portal!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":102,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":392,"w":704,"h":24},
-        {"x":196,"y":238,"w":732,"h":24},
-        {"x":32,"y":162,"w":218,"h":24},
-        {"x":260,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":226,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":260,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -2913,68 +2948,68 @@
       name: "Skyward Staircase",
       hint: "Majestic marble terraces climb into the sky. Ascend step by step using precision single jumps and mid-air boosts!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":210,"y":410,"w":140,"h":24},
-        {"x":370,"y":310,"w":90,"h":24},
-        {"x":500,"y":210,"w":120,"h":24},
-        {"x":670,"y":32,"w":36,"h":320},
-        {"x":750,"y":210,"w":178,"h":298}
+        {"x":190,"y":430,"w":124,"h":22},
+        {"x":325,"y":360,"w":124,"h":22},
+        {"x":482,"y":290,"w":134,"h":22},
+        {"x":657,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":525,"y":198,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":512,"y":278,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":670,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":657,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 82,
       name: "Citadel Skylight",
       hint: "Shed outer shell to slip through the citadel skylight vent (24px clearance), hit the palace switch, and recall your shell to jump!",
-      spawn: {"x":70,"y":252},
-      exit: {"x":850,"y":252,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":312,"w":252,"h":196},
-        {"x":452,"y":338,"w":150,"h":170},
-        {"x":658,"y":312,"w":270,"h":196},
-        {"x":658,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":214,"h":178},
+        {"x":395,"y":410,"w":130,"h":98},
+        {"x":587,"y":420,"w":60,"h":88},
+        {"x":667,"y":330,"w":261,"h":178},
+        {"x":727,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":477,"y":326,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":420,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":658,"y":212,"w":36,"h":100,"currentY":212,"targetY":212,"openY":30,"closedY":212}
+        {"id":"gate1","switchId":"sw1","x":727,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 83,
       name: "The Cloud Terraces",
       hint: "High floating terraces drift across the azure. Weigh Switch 1 on Terrace 1 to retract the sky barrier for Terrace 2!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":108,"y":425,"w":90,"h":83},
-        {"x":196,"y":32,"w":290,"h":440},
-        {"x":692,"y":32,"w":36,"h":320}
+        {"x":136,"y":440,"w":70,"h":68},
+        {"x":246,"y":32,"w":316,"h":416},
+        {"x":690,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":526,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":356,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":692,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":690,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -2982,48 +3017,50 @@
       name: "Hall of Banners",
       hint: "The royal colonnade: place a shell on the entrance seal to lift the grand banner gate and ascend the cathedral steps!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":228,"y":372,"w":50,"h":136},
-        {"x":350,"y":32,"w":50,"h":262},
-        {"x":568,"y":322,"w":50,"h":186},
-        {"x":700,"y":32,"w":36,"h":310}
+        {"x":176,"y":450,"w":60,"h":58},
+        {"x":251,"y":400,"w":50,"h":108},
+        {"x":326,"y":420,"w":60,"h":88},
+        {"x":401,"y":360,"w":50,"h":148},
+        {"x":680,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":571,"y":310,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":404,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":700,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":680,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 85,
       name: "The Aerie Watchtower",
       hint: "Extreme vertical climb up the fortress watchtower. Scale the staggered balconies, drop a shell on the watch switch, and leap!",
-      spawn: {"x":70,"y":343},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":403,"w":110,"h":24},
-        {"x":270,"y":334,"w":100,"h":22},
-        {"x":364,"y":266,"w":100,"h":22},
-        {"x":570,"y":344,"w":110,"h":22},
-        {"x":664,"y":244,"w":100,"h":22},
-        {"x":770,"y":32,"w":36,"h":210},
-        {"x":800,"y":260,"w":128,"h":24}
+        {"x":32,"y":440,"w":140,"h":68},
+        {"x":192,"y":380,"w":100,"h":128},
+        {"x":312,"y":320,"w":110,"h":188},
+        {"x":442,"y":260,"w":100,"h":248},
+        {"x":562,"y":200,"w":148,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":598,"y":332,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":342,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":770,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3031,72 +3068,70 @@
       name: "Sunburst Colonnade",
       hint: "Two sun gates span the grand colonnade. Weigh Switch 1 on the ground, then ascend the sunburst pillars to weigh Switch 2!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":264,"y":248,"w":44,"h":260},
-        {"x":264,"y":32,"w":44,"h":80},
-        {"x":548,"y":248,"w":44,"h":260},
-        {"x":548,"y":32,"w":44,"h":80},
-        {"x":694,"y":32,"w":36,"h":210},
-        {"x":732,"y":240,"w":196,"h":268}
+        {"x":299,"y":32,"w":36,"h":320},
+        {"x":374,"y":450,"w":70,"h":58},
+        {"x":464,"y":390,"w":85,"h":118},
+        {"x":579,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":382,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":484,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":694,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":299,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":579,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 87,
       name: "The Solar Airlock",
       hint: "Double airlock sequencing: enter the outer lock, weigh the inner pedestal, and step out onto the solar promenade!",
-      spawn: {"x":80,"y":176},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":246,"w":366,"h":28},
-        {"x":496,"y":246,"w":432,"h":28},
-        {"x":698,"y":284,"w":40,"h":224}
+        {"x":32,"y":240,"w":361,"h":28},
+        {"x":503,"y":240,"w":425,"h":28},
+        {"x":685,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":256,"y":234,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":698,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":685,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 88,
       name: "Zephyr Bridge",
       hint: "High-altitude platforms span the open sky. Use an ejected shell block as an intermediate anchor to leap across the zephyr gulf!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":184,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":80,"y":336,"w":160,"h":24},
-        {"x":680,"y":336,"w":160,"h":24},
-        {"x":380,"y":244,"w":160,"h":24},
-        {"x":350,"y":32,"w":36,"h":190},
-        {"x":540,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":115,"y":324,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":715,"y":324,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":350,"y":246,"w":36,"h":80,"currentY":246,"targetY":246,"openY":100,"closedY":246},
-        {"id":"gate2","switchId":"sw2","x":540,"y":246,"w":36,"h":80,"currentY":246,"targetY":246,"openY":100,"closedY":246}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -3104,44 +3139,49 @@
       name: "Spire of the Archon",
       hint: "Ascend the archon's spire: crawl through the low reliquary duct, place your shell on the spire switch, and boost to the heavens!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":222,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":162,"y":282,"w":588,"h":28},
-        {"x":378,"y":310,"w":44,"h":198},
-        {"x":784,"y":282,"w":144,"h":226}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":492,"y":440,"w":70,"h":68},
+        {"x":572,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":466,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":754,"y":112,"w":36,"h":170,"currentY":112,"targetY":112,"openY":-20,"closedY":112}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 90,
       name: "Citadel Ascension",
       hint: "Chapter 6 Climax! Scale the pinnacle of the Celestial Citadel: coordinate nested shell weights to unseal the Golden Skylight!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":90,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":380,"w":732,"h":24},
-        {"x":212,"y":250,"w":716,"h":24},
-        {"x":32,"y":150,"w":274,"h":24},
-        {"x":316,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":238,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":316,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3149,68 +3189,68 @@
       name: "The Grand Convergence",
       hint: "Master Trial 1: Four interconnected chambers. Coordinate lower and upper switches to converge on the central sanctuary!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":178,"y":368,"w":100,"h":24},
-        {"x":330,"y":268,"w":110,"h":24},
-        {"x":484,"y":168,"w":100,"h":24},
-        {"x":650,"y":32,"w":36,"h":320},
-        {"x":730,"y":210,"w":198,"h":298}
+        {"x":166,"y":416,"w":100,"h":22},
+        {"x":313,"y":346,"w":100,"h":22},
+        {"x":470,"y":276,"w":110,"h":22},
+        {"x":651,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":509,"y":156,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":500,"y":264,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":650,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":651,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 92,
       name: "The Paradox Chamber",
       hint: "Master Trial 2: Stand near the barrier, drop your shell on the floor switch, hop through as it opens, and recall your shell!",
-      spawn: {"x":70,"y":240},
-      exit: {"x":850,"y":240,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":300,"w":220,"h":208},
-        {"x":420,"y":350,"w":110,"h":158},
-        {"x":674,"y":300,"w":254,"h":208},
-        {"x":674,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":190,"h":178},
+        {"x":405,"y":410,"w":106,"h":98},
+        {"x":575,"y":420,"w":60,"h":88},
+        {"x":655,"y":330,"w":273,"h":178},
+        {"x":715,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":445,"y":338,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":430,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":674,"y":200,"w":36,"h":100,"currentY":200,"targetY":200,"openY":30,"closedY":200}
+        {"id":"gate1","switchId":"sw1","x":715,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 93,
       name: "Needle Eye Pass",
       hint: "Master Trial 3: Ultra-tight 22px duct. Eject both shells, squeeze your core through to press the gate switch, then recall to leap!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":136,"y":431,"w":70,"h":77},
-        {"x":252,"y":32,"w":250,"h":440},
-        {"x":708,"y":32,"w":36,"h":320}
+        {"x":157,"y":440,"w":70,"h":68},
+        {"x":267,"y":32,"w":292,"h":416},
+        {"x":700,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":542,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":377,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":708,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":700,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -3218,48 +3258,50 @@
       name: "The Double Helix",
       hint: "Master Trial 4: Two interlocking tiers. Switch 1 on the lower terrace opens the upper gate; Switch 2 opens the lower exit!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":196,"y":384,"w":50,"h":124},
-        {"x":366,"y":32,"w":50,"h":274},
-        {"x":536,"y":334,"w":50,"h":174},
-        {"x":716,"y":32,"w":36,"h":310}
+        {"x":152,"y":450,"w":60,"h":58},
+        {"x":227,"y":400,"w":50,"h":108},
+        {"x":302,"y":420,"w":60,"h":88},
+        {"x":377,"y":360,"w":50,"h":148},
+        {"x":690,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":539,"y":322,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":380,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":716,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":690,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 95,
       name: "Ascent of the Ascetic",
       hint: "Master Trial 5: Pure technical elevation. Ascend extreme 80px pillars across the abyss with perfectly timed mid-air double jumps!",
-      spawn: {"x":70,"y":364},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":424,"w":110,"h":24},
-        {"x":238,"y":292,"w":130,"h":22},
-        {"x":380,"y":308,"w":130,"h":22},
-        {"x":538,"y":302,"w":140,"h":22},
-        {"x":680,"y":202,"w":130,"h":22},
-        {"x":754,"y":32,"w":36,"h":210},
-        {"x":792,"y":260,"w":136,"h":24}
+        {"x":32,"y":440,"w":128,"h":68},
+        {"x":180,"y":380,"w":100,"h":128},
+        {"x":300,"y":320,"w":110,"h":188},
+        {"x":430,"y":260,"w":100,"h":248},
+        {"x":550,"y":200,"w":160,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":566,"y":290,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":754,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3267,72 +3309,70 @@
       name: "The Magnetic Core",
       hint: "Master Trial 6: Eject your outer shell onto Switch 1, leap across before the timer, and perform a cross-chamber magnetic recall!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":320,"y":236,"w":44,"h":272},
-        {"x":320,"y":32,"w":44,"h":80},
-        {"x":508,"y":236,"w":44,"h":272},
-        {"x":508,"y":32,"w":44,"h":80},
-        {"x":674,"y":32,"w":36,"h":210},
-        {"x":760,"y":240,"w":168,"h":268}
+        {"x":320,"y":32,"w":36,"h":320},
+        {"x":395,"y":450,"w":70,"h":58},
+        {"x":485,"y":390,"w":85,"h":118},
+        {"x":600,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":410,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":505,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":674,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":320,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":600,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 97,
       name: "The Labyrinth of Trials",
       hint: "Navigate the winding 3-tier labyrinth: eject down to crawl under the low baffle, weigh the floor plates, and scale the ascending switchback ledges!",
-      spawn: {"x":80,"y":164},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":234,"w":334,"h":28},
-        {"x":512,"y":234,"w":416,"h":28},
-        {"x":682,"y":296,"w":40,"h":212}
+        {"x":32,"y":240,"w":349,"h":28},
+        {"x":491,"y":240,"w":437,"h":28},
+        {"x":690,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":224,"y":222,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":682,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":690,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 98,
       name: "The Apex Gauntlet",
       hint: "Master Trial 8: High precision aerial gauntlet. Drop your shell in mid-air onto the floating apex switch and bound to the terrace!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":172,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":136,"y":348,"w":120,"h":24},
-        {"x":720,"y":348,"w":120,"h":24},
-        {"x":394,"y":232,"w":160,"h":24},
-        {"x":364,"y":32,"w":36,"h":190},
-        {"x":554,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":171,"y":336,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":755,"y":336,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":364,"y":234,"w":36,"h":80,"currentY":234,"targetY":234,"openY":100,"closedY":234},
-        {"id":"gate2","switchId":"sw2","x":554,"y":234,"w":36,"h":80,"currentY":234,"targetY":234,"openY":100,"closedY":234}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -3340,44 +3380,49 @@
       name: "The Gate of Eternity",
       hint: "Master Trial 9 (Penultimate): Combine nested shell shedding, crawl duct threading, dual switch locks, and an epic aerial boost!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":210,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":130,"y":270,"w":620,"h":28},
-        {"x":394,"y":298,"w":44,"h":210},
-        {"x":792,"y":270,"w":136,"h":238}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":480,"y":440,"w":70,"h":68},
+        {"x":560,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":450,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":762,"y":100,"w":36,"h":170,"currentY":100,"targetY":100,"openY":-20,"closedY":100}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 100,
       name: "The Master of All Shells (Centennial Finale)",
       hint: "THE CENTENNIAL GRAND FINALE! Master every layer, coordinate dual shell placement, and ascend to the Ultimate Centennial Throne!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":132,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":422,"w":716,"h":24},
-        {"x":228,"y":208,"w":700,"h":24},
-        {"x":32,"y":192,"w":242,"h":24},
-        {"x":284,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":196,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":284,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3385,68 +3430,68 @@
       name: "Orbital Launchpad",
       hint: "Perform a double-eject launch to clear the towering orbital transmitter tower!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":234,"y":380,"w":130,"h":24},
-        {"x":346,"y":280,"w":95,"h":24},
-        {"x":512,"y":180,"w":115,"h":24},
-        {"x":658,"y":32,"w":36,"h":320},
-        {"x":738,"y":210,"w":190,"h":298}
+        {"x":208,"y":420,"w":118,"h":22},
+        {"x":334,"y":350,"w":118,"h":22},
+        {"x":475,"y":280,"w":128,"h":22},
+        {"x":662,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":537,"y":168,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":505,"y":268,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":658,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":662,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 102,
       name: "Gravitational Well",
       hint: "Drop into the magnetic well to weigh down Switch 1, then climb out using dropped shells!",
-      spawn: {"x":70,"y":228},
-      exit: {"x":850,"y":228,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":288,"w":188,"h":220},
-        {"x":388,"y":362,"w":140,"h":146},
-        {"x":690,"y":288,"w":238,"h":220},
-        {"x":690,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":166,"h":178},
+        {"x":415,"y":410,"w":124,"h":98},
+        {"x":563,"y":420,"w":60,"h":88},
+        {"x":643,"y":330,"w":285,"h":178},
+        {"x":703,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":413,"y":350,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":690,"y":188,"w":36,"h":100,"currentY":188,"targetY":188,"openY":30,"closedY":188}
+        {"id":"gate1","switchId":"sw1","x":703,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 103,
       name: "Stellar Airlock",
       hint: "Two satellite pads hold the lock! Eject one shell on Pad 1, then jump across to Pad 2.",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":120,"y":437,"w":85,"h":71},
-        {"x":220,"y":32,"w":280,"h":440},
-        {"x":668,"y":32,"w":36,"h":320}
+        {"x":145,"y":440,"w":70,"h":68},
+        {"x":255,"y":32,"w":310,"h":416},
+        {"x":675,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":540,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":365,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":668,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":675,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -3454,48 +3499,50 @@
       name: "Zenith Crawlway",
       hint: "Shrink to core size to squeeze through the high solar vent, then activate the descent gate!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":252,"y":342,"w":50,"h":166},
-        {"x":382,"y":32,"w":50,"h":232},
-        {"x":592,"y":292,"w":50,"h":216},
-        {"x":732,"y":32,"w":36,"h":310}
+        {"x":194,"y":450,"w":60,"h":58},
+        {"x":269,"y":400,"w":50,"h":108},
+        {"x":344,"y":420,"w":60,"h":88},
+        {"x":419,"y":360,"w":50,"h":148},
+        {"x":700,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":595,"y":280,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":422,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":732,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":700,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 105,
       name: "Meteor Crater Leap",
       hint: "Leap over the deep crater, ejecting mid-air for maximum horizontal range!",
-      spawn: {"x":70,"y":358},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":418,"w":110,"h":24},
-        {"x":206,"y":304,"w":90,"h":22},
-        {"x":340,"y":296,"w":90,"h":22},
-        {"x":506,"y":314,"w":100,"h":22},
-        {"x":640,"y":214,"w":90,"h":22},
-        {"x":738,"y":32,"w":36,"h":210},
-        {"x":784,"y":260,"w":144,"h":24}
+        {"x":32,"y":440,"w":116,"h":68},
+        {"x":168,"y":380,"w":100,"h":128},
+        {"x":288,"y":320,"w":110,"h":188},
+        {"x":418,"y":260,"w":100,"h":248},
+        {"x":538,"y":200,"w":172,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":534,"y":302,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":318,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":738,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3503,72 +3550,70 @@
       name: "Solar Array Staircase",
       hint: "Ascend the solar panels! Use your discarded shells as intermediate steps to bridge steep rises.",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":288,"y":224,"w":44,"h":284},
-        {"x":288,"y":32,"w":44,"h":80},
-        {"x":524,"y":224,"w":44,"h":284},
-        {"x":524,"y":32,"w":44,"h":80},
-        {"x":682,"y":32,"w":36,"h":210},
-        {"x":744,"y":240,"w":184,"h":268}
+        {"x":308,"y":32,"w":36,"h":320},
+        {"x":383,"y":450,"w":70,"h":58},
+        {"x":473,"y":390,"w":85,"h":118},
+        {"x":588,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":394,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":493,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":682,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":308,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":588,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 107,
       name: "Twin Pulsar Gates",
       hint: "Drop one shell on Pulsar A, then bound across the floating pylons to reach Pulsar B!",
-      spawn: {"x":80,"y":152},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":222,"w":390,"h":28},
-        {"x":528,"y":222,"w":400,"h":28},
-        {"x":710,"y":308,"w":40,"h":200}
+        {"x":32,"y":240,"w":370,"h":28},
+        {"x":512,"y":240,"w":416,"h":28},
+        {"x":695,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":280,"y":210,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":710,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":695,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 108,
       name: "Nebula Trench",
       hint: "Navigate the layered vertical descent by placing shells strategically on the security valves!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":160,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":104,"y":360,"w":150,"h":24},
-        {"x":704,"y":360,"w":150,"h":24},
-        {"x":386,"y":220,"w":160,"h":24},
-        {"x":356,"y":32,"w":36,"h":190},
-        {"x":546,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":139,"y":348,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":739,"y":348,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":356,"y":222,"w":36,"h":80,"currentY":222,"targetY":222,"openY":100,"closedY":222},
-        {"id":"gate2","switchId":"sw2","x":546,"y":222,"w":36,"h":80,"currentY":222,"targetY":222,"openY":100,"closedY":222}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -3576,44 +3621,49 @@
       name: "Asteroid Stepping Field",
       hint: "Eject shells precisely onto the miniature asteroid pads to cross the cosmic vacuum!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":252,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":186,"y":312,"w":564,"h":28},
-        {"x":410,"y":340,"w":44,"h":168},
-        {"x":800,"y":312,"w":128,"h":196}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":501,"y":440,"w":70,"h":68},
+        {"x":581,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":478,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":770,"y":142,"w":36,"h":170,"currentY":142,"targetY":142,"openY":-20,"closedY":142}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 110,
       name: "Aurora Sanctuary",
       hint: "Ascend to the high observatory by triggering the balance locks with timed shell recall!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":120,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":410,"w":700,"h":24},
-        {"x":188,"y":220,"w":740,"h":24},
-        {"x":32,"y":180,"w":210,"h":24},
-        {"x":252,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":208,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":252,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3621,68 +3671,68 @@
       name: "Nanowire Conduit",
       hint: "Only the unencumbered 20px core can squeeze into the nanowire tunnel! Shed both shells outside.",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":202,"y":392,"w":160,"h":24},
-        {"x":362,"y":292,"w":80,"h":24},
-        {"x":496,"y":192,"w":130,"h":24},
-        {"x":666,"y":32,"w":36,"h":320},
-        {"x":746,"y":210,"w":182,"h":298}
+        {"x":184,"y":424,"w":136,"h":22},
+        {"x":322,"y":354,"w":136,"h":22},
+        {"x":480,"y":284,"w":146,"h":22},
+        {"x":656,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":521,"y":180,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":510,"y":272,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":666,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":656,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 112,
       name: "Quantum Memory Pad",
       hint: "Weigh down the RAM pad on the high platform to release the processing chamber gate.",
-      spawn: {"x":70,"y":216},
-      exit: {"x":850,"y":216,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":276,"w":244,"h":232},
-        {"x":444,"y":374,"w":100,"h":134},
-        {"x":650,"y":276,"w":278,"h":232},
-        {"x":650,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":208,"h":178},
+        {"x":390,"y":410,"w":100,"h":98},
+        {"x":584,"y":420,"w":60,"h":88},
+        {"x":664,"y":330,"w":264,"h":178},
+        {"x":724,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":469,"y":362,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":415,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":650,"y":176,"w":36,"h":100,"currentY":176,"targetY":176,"openY":30,"closedY":176}
+        {"id":"gate1","switchId":"sw1","x":724,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 113,
       name: "Logic Gate Inversion",
       hint: "Two logic gates protect the busway! Coordinate dual shell placement to invert both valves.",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":104,"y":416,"w":65,"h":92},
-        {"x":188,"y":32,"w":240,"h":440},
-        {"x":684,"y":32,"w":36,"h":320}
+        {"x":133,"y":440,"w":70,"h":68},
+        {"x":243,"y":32,"w":286,"h":416},
+        {"x":685,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":468,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":353,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":684,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":685,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -3690,48 +3740,50 @@
       name: "Micro-Piston Shaft",
       hint: "Scale the micro-piston chimney using stacked shell steps!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":220,"y":354,"w":50,"h":154},
-        {"x":398,"y":32,"w":50,"h":244},
-        {"x":560,"y":304,"w":50,"h":204},
-        {"x":748,"y":32,"w":36,"h":310}
+        {"x":170,"y":450,"w":60,"h":58},
+        {"x":245,"y":400,"w":50,"h":108},
+        {"x":320,"y":420,"w":60,"h":88},
+        {"x":395,"y":360,"w":50,"h":148},
+        {"x":710,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":563,"y":292,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":398,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":748,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":710,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 115,
       name: "Circuit Busway",
       hint: "Sprint across the open busway and recall your shell mid-flight to avoid the thermal floor!",
-      spawn: {"x":70,"y":352},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":412,"w":110,"h":24},
-        {"x":262,"y":316,"w":120,"h":22},
-        {"x":356,"y":284,"w":120,"h":22},
-        {"x":562,"y":326,"w":130,"h":22},
-        {"x":656,"y":226,"w":120,"h":22},
-        {"x":766,"y":32,"w":36,"h":210},
-        {"x":798,"y":260,"w":130,"h":24}
+        {"x":32,"y":440,"w":137,"h":68},
+        {"x":189,"y":380,"w":100,"h":128},
+        {"x":309,"y":320,"w":110,"h":188},
+        {"x":439,"y":260,"w":100,"h":248},
+        {"x":559,"y":200,"w":151,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":590,"y":314,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":339,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":766,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3739,72 +3791,70 @@
       name: "Sub-Atomic Chamber",
       hint: "Drop into the sub-atomic well to trip the gate trigger, then launch back up using shell recoil!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":256,"y":212,"w":44,"h":296},
-        {"x":256,"y":32,"w":44,"h":80},
-        {"x":540,"y":212,"w":44,"h":296},
-        {"x":540,"y":32,"w":44,"h":80},
-        {"x":690,"y":32,"w":36,"h":210},
-        {"x":728,"y":240,"w":200,"h":268}
+        {"x":296,"y":32,"w":36,"h":320},
+        {"x":371,"y":450,"w":70,"h":58},
+        {"x":461,"y":390,"w":85,"h":118},
+        {"x":576,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":378,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":481,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":690,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":296,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":576,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 117,
       name: "Overclocked Relay",
       hint: "High heat walls! Time your mid-air double jump to sail clean over the overclocked heat sinks.",
-      spawn: {"x":80,"y":140},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":210,"w":358,"h":28},
-        {"x":488,"y":210,"w":440,"h":28},
-        {"x":694,"y":320,"w":40,"h":188}
+        {"x":32,"y":240,"w":358,"h":28},
+        {"x":500,"y":240,"w":428,"h":28},
+        {"x":682,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":248,"y":198,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":694,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":682,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 118,
       name: "Dual Core Transistor",
       hint: "Both transistor bases must be saturated! Place shells on both Base Alpha and Base Beta.",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":202,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":160,"y":318,"w":180,"h":24},
-        {"x":688,"y":318,"w":180,"h":24},
-        {"x":400,"y":262,"w":160,"h":24},
-        {"x":370,"y":32,"w":36,"h":190},
-        {"x":560,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":195,"y":306,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":723,"y":306,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":370,"y":264,"w":36,"h":80,"currentY":264,"targetY":264,"openY":100,"closedY":264},
-        {"id":"gate2","switchId":"sw2","x":560,"y":264,"w":36,"h":80,"currentY":264,"targetY":264,"openY":100,"closedY":264}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -3812,44 +3862,49 @@
       name: "Motherboard Spire",
       hint: "Ascend the motherboard traces to reach the central CPU socket at the apex!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":240,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":154,"y":300,"w":596,"h":28},
-        {"x":370,"y":328,"w":44,"h":180},
-        {"x":780,"y":300,"w":148,"h":208}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":489,"y":440,"w":70,"h":68},
+        {"x":569,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":462,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":750,"y":130,"w":36,"h":170,"currentY":130,"targetY":130,"openY":-20,"closedY":130}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 120,
       name: "Cryo-Vault Core",
       hint: "Trip the cooling vent switch to open the vacuum hatch to the mainframe exit!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":108,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":398,"w":728,"h":24},
-        {"x":204,"y":232,"w":724,"h":24},
-        {"x":32,"y":168,"w":266,"h":24},
-        {"x":308,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":220,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":308,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3857,68 +3912,68 @@
       name: "Stalactite Causeway",
       hint: "Ceiling stalactites block high jumps! Keep your arc low and controlled across the gorge.",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":170,"y":404,"w":120,"h":24},
-        {"x":378,"y":304,"w":100,"h":24},
-        {"x":480,"y":204,"w":110,"h":24},
-        {"x":674,"y":32,"w":36,"h":320},
-        {"x":754,"y":210,"w":174,"h":298}
+        {"x":160,"y":428,"w":112,"h":22},
+        {"x":310,"y":358,"w":112,"h":22},
+        {"x":485,"y":288,"w":122,"h":22},
+        {"x":650,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":505,"y":192,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":515,"y":276,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":674,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":650,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 122,
       name: "Sunken Cistern",
       hint: "Drain the subterranean cistern: eject a shell to bridge the deep sluice canal, activate the aqueduct valve on the fountain plinth, and drain the exit gate!",
-      spawn: {"x":70,"y":258},
-      exit: {"x":850,"y":258,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":318,"w":212,"h":190},
-        {"x":412,"y":332,"w":130,"h":176},
-        {"x":666,"y":318,"w":262,"h":190},
-        {"x":666,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":184,"h":178},
+        {"x":400,"y":410,"w":118,"h":98},
+        {"x":572,"y":420,"w":60,"h":88},
+        {"x":652,"y":330,"w":276,"h":178},
+        {"x":712,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":437,"y":320,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":425,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":666,"y":218,"w":36,"h":100,"currentY":218,"targetY":218,"openY":30,"closedY":218}
+        {"id":"gate1","switchId":"sw1","x":712,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 123,
       name: "Geode Crevasse",
       hint: "Scale the geode walls! Drop outer shells to gain high double-jump propulsion toward the upper ledge.",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":132,"y":422,"w":80,"h":86},
-        {"x":244,"y":32,"w":270,"h":440},
-        {"x":700,"y":32,"w":36,"h":320}
+        {"x":154,"y":440,"w":70,"h":68},
+        {"x":264,"y":32,"w":304,"h":416},
+        {"x":695,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":554,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":374,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":700,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":695,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -3926,48 +3981,50 @@
       name: "Subterranean Aqueduct",
       hint: "Shrink your form to crawl through the narrow aqueduct sluice to trigger the cistern gate!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":188,"y":366,"w":50,"h":142},
-        {"x":358,"y":32,"w":50,"h":256},
-        {"x":528,"y":316,"w":50,"h":192},
-        {"x":708,"y":32,"w":36,"h":310}
+        {"x":146,"y":450,"w":60,"h":58},
+        {"x":221,"y":400,"w":50,"h":108},
+        {"x":296,"y":420,"w":60,"h":88},
+        {"x":371,"y":360,"w":50,"h":148},
+        {"x":685,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":531,"y":304,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":374,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":708,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":685,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 125,
       name: "Echoing Alcove",
       hint: "Weigh down both ancient alcove plates with ejected shells to open the sanctum path.",
-      spawn: {"x":70,"y":346},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":406,"w":110,"h":24},
-        {"x":230,"y":328,"w":150,"h":22},
-        {"x":372,"y":272,"w":150,"h":22},
-        {"x":530,"y":338,"w":160,"h":22},
-        {"x":672,"y":238,"w":150,"h":22},
-        {"x":750,"y":32,"w":36,"h":210},
-        {"x":790,"y":260,"w":138,"h":24}
+        {"x":32,"y":440,"w":125,"h":68},
+        {"x":177,"y":380,"w":100,"h":128},
+        {"x":297,"y":320,"w":110,"h":188},
+        {"x":427,"y":260,"w":100,"h":248},
+        {"x":547,"y":200,"w":163,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":558,"y":326,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":327,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":750,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -3975,72 +4032,70 @@
       name: "Crystal Spine",
       hint: "Scale the sharp crystal ridge using disciplined single jumps and shell-stepping assists!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":312,"y":200,"w":44,"h":308},
-        {"x":312,"y":32,"w":44,"h":80},
-        {"x":500,"y":200,"w":44,"h":308},
-        {"x":500,"y":32,"w":44,"h":80},
-        {"x":670,"y":32,"w":36,"h":210},
-        {"x":756,"y":240,"w":172,"h":268}
+        {"x":317,"y":32,"w":36,"h":320},
+        {"x":392,"y":450,"w":70,"h":58},
+        {"x":482,"y":390,"w":85,"h":118},
+        {"x":597,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":406,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":502,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":670,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":317,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":597,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 127,
       name: "Forgotten Sluice",
       hint: "Trip the drainage sluice plate to lift the heavy stone portcullis!",
-      spawn: {"x":80,"y":182},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":252,"w":326,"h":28},
-        {"x":504,"y":252,"w":424,"h":28},
-        {"x":678,"y":278,"w":40,"h":230}
+        {"x":32,"y":240,"w":346,"h":28},
+        {"x":488,"y":240,"w":440,"h":28},
+        {"x":687,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":216,"y":240,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":678,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":687,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 128,
       name: "Bioluminescent Vault",
       hint: "Sprint across the chasm, mid-air ejecting to cross the expanse into the glowing cavern!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":190,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":128,"y":330,"w":140,"h":24},
-        {"x":672,"y":330,"w":140,"h":24},
-        {"x":392,"y":250,"w":160,"h":24},
-        {"x":362,"y":32,"w":36,"h":190},
-        {"x":552,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":163,"y":318,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":707,"y":318,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":362,"y":252,"w":36,"h":80,"currentY":252,"targetY":252,"openY":100,"closedY":252},
-        {"id":"gate2","switchId":"sw2","x":552,"y":252,"w":36,"h":80,"currentY":252,"targetY":252,"openY":100,"closedY":252}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -4048,44 +4103,49 @@
       name: "Mineral Quarry Ledge",
       hint: "Descend into the open-pit mineral quarry: step across tiered excavation benches, drop into the slag pit to power the lift hoist, and ride up to the refinery!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":228,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":210,"y":288,"w":540,"h":28},
-        {"x":386,"y":316,"w":44,"h":192},
-        {"x":788,"y":288,"w":140,"h":220}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":510,"y":440,"w":70,"h":68},
+        {"x":590,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":490,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":758,"y":118,"w":36,"h":170,"currentY":118,"targetY":118,"openY":-20,"closedY":118}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 130,
       name: "Deep Chamber Siphon",
       hint: "Drop into the siphon to weigh down the floor valve, then catapult back up to the exit ledge!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":96,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":386,"w":712,"h":24},
-        {"x":220,"y":244,"w":708,"h":24},
-        {"x":32,"y":156,"w":234,"h":24},
-        {"x":276,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":232,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":276,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -4093,68 +4153,68 @@
       name: "The Architect's Plinth",
       hint: "Tightly spaced plinths! Precision jumps and quick shell discards are paramount.",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":226,"y":362,"w":150,"h":24},
-        {"x":338,"y":262,"w":85,"h":24},
-        {"x":508,"y":162,"w":125,"h":24},
-        {"x":654,"y":32,"w":36,"h":320},
-        {"x":734,"y":210,"w":194,"h":298}
+        {"x":202,"y":414,"w":130,"h":22},
+        {"x":331,"y":344,"w":130,"h":22},
+        {"x":472,"y":274,"w":140,"h":22},
+        {"x":660,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":533,"y":150,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":502,"y":262,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":654,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":660,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 132,
       name: "Staggered Pylons",
       hint: "Weigh down the lower pylon switch to retract the upper barrier, then scale the peaks.",
-      spawn: {"x":70,"y":246},
-      exit: {"x":850,"y":246,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":306,"w":180,"h":202},
-        {"x":380,"y":344,"w":160,"h":164},
-        {"x":682,"y":306,"w":246,"h":202},
-        {"x":682,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":160,"h":178},
+        {"x":410,"y":410,"w":136,"h":98},
+        {"x":560,"y":420,"w":60,"h":88},
+        {"x":640,"y":330,"w":288,"h":178},
+        {"x":700,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":405,"y":332,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":435,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":682,"y":206,"w":36,"h":100,"currentY":206,"targetY":206,"openY":30,"closedY":206}
+        {"id":"gate1","switchId":"sw1","x":700,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 133,
       name: "Needle-Eye Passage",
       hint: "Shed outer shells outside the needle tunnel, slip through, and activate the sanctum lift!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":116,"y":428,"w":60,"h":80},
-        {"x":212,"y":32,"w":230,"h":440},
-        {"x":660,"y":32,"w":36,"h":320}
+        {"x":142,"y":440,"w":70,"h":68},
+        {"x":252,"y":32,"w":280,"h":416},
+        {"x":670,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":482,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":362,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":660,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":670,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -4162,48 +4222,50 @@
       name: "Dual Pressure Atrium",
       hint: "A grand vaulted cathedral: use mid-air shell ejections to reach the western gallery switch, drop into the high altar dais, and breach the eastern sanctuary!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":244,"y":378,"w":50,"h":130},
-        {"x":374,"y":32,"w":50,"h":268},
-        {"x":584,"y":328,"w":50,"h":180},
-        {"x":724,"y":32,"w":36,"h":310}
+        {"x":188,"y":450,"w":60,"h":58},
+        {"x":263,"y":400,"w":50,"h":108},
+        {"x":338,"y":420,"w":60,"h":88},
+        {"x":413,"y":360,"w":50,"h":148},
+        {"x":695,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":587,"y":316,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":416,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":724,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":695,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 135,
       name: "The Ascending Citadel",
       hint: "Four grand tiers! Climb through the citadel using double-jumps and strategically placed shell steps.",
-      spawn: {"x":70,"y":340},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":400,"w":110,"h":24},
-        {"x":198,"y":340,"w":110,"h":22},
-        {"x":388,"y":260,"w":110,"h":22},
-        {"x":498,"y":350,"w":120,"h":22},
-        {"x":688,"y":250,"w":110,"h":22},
-        {"x":734,"y":32,"w":36,"h":210},
-        {"x":782,"y":260,"w":146,"h":24}
+        {"x":32,"y":440,"w":113,"h":68},
+        {"x":165,"y":380,"w":100,"h":128},
+        {"x":285,"y":320,"w":110,"h":188},
+        {"x":415,"y":260,"w":100,"h":248},
+        {"x":535,"y":200,"w":175,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":526,"y":338,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":315,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":734,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -4211,72 +4273,70 @@
       name: "Pendulum Chasm",
       hint: "Leap into the chasm, drop a shell for mid-air boost, and recall your shell mid-flight to land cleanly!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":280,"y":242,"w":44,"h":266},
-        {"x":280,"y":32,"w":44,"h":80},
-        {"x":516,"y":242,"w":44,"h":266},
-        {"x":516,"y":32,"w":44,"h":80},
-        {"x":678,"y":32,"w":36,"h":210},
-        {"x":740,"y":240,"w":188,"h":268}
+        {"x":305,"y":32,"w":36,"h":320},
+        {"x":380,"y":450,"w":70,"h":58},
+        {"x":470,"y":390,"w":85,"h":118},
+        {"x":585,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":390,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":490,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":678,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":305,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":585,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 137,
       name: "Symmetry Vault",
       hint: "Both symmetrical wings have a lock! Trigger Switch Alpha on the left, then cross over to Switch Beta.",
-      spawn: {"x":80,"y":170},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":240,"w":382,"h":28},
-        {"x":520,"y":240,"w":408,"h":28},
-        {"x":706,"y":290,"w":40,"h":218}
+        {"x":32,"y":240,"w":367,"h":28},
+        {"x":509,"y":240,"w":419,"h":28},
+        {"x":692,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":272,"y":228,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":706,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":692,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 138,
       name: "Floating Isle Matrix",
       hint: "Hop across five floating stone islands suspended over the abyss!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":178,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":96,"y":342,"w":170,"h":24},
-        {"x":712,"y":342,"w":170,"h":24},
-        {"x":384,"y":238,"w":160,"h":24},
-        {"x":354,"y":32,"w":36,"h":190},
-        {"x":544,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":131,"y":330,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":747,"y":330,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":354,"y":240,"w":36,"h":80,"currentY":240,"targetY":240,"openY":100,"closedY":240},
-        {"id":"gate2","switchId":"sw2","x":544,"y":240,"w":36,"h":80,"currentY":240,"targetY":240,"openY":100,"closedY":240}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -4284,44 +4344,49 @@
       name: "The Quad Lock",
       hint: "Trip the sequential security gate, retrieve your shell, and breach the final sanctuary!",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":216,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":178,"y":276,"w":572,"h":28},
-        {"x":402,"y":304,"w":44,"h":204},
-        {"x":796,"y":276,"w":132,"h":232}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":498,"y":440,"w":70,"h":68},
+        {"x":578,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":474,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":766,"y":106,"w":36,"h":170,"currentY":106,"targetY":106,"openY":-20,"closedY":106}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 140,
       name: "Tower of Zenith",
       hint: "Ascend the high skyward spire: jump and drop nested shells to scale the zigzag ledges to the rooftop beacon, release the drop gate, and dive into the observatory!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":138,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":428,"w":740,"h":24},
-        {"x":180,"y":202,"w":748,"h":24},
-        {"x":32,"y":198,"w":290,"h":24},
-        {"x":332,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":190,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":332,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -4329,68 +4394,68 @@
       name: "The Threshold of Infinity",
       hint: "Mid-air double-jump across the boundless abyss, deploying a stepping shell beneath you at the apex!",
       spawn: {"x":70,"y":440},
-      exit: {"x":850,"y":150,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":194,"y":374,"w":110,"h":24},
-        {"x":354,"y":274,"w":105,"h":24},
-        {"x":492,"y":174,"w":105,"h":24},
-        {"x":662,"y":32,"w":36,"h":320},
-        {"x":742,"y":210,"w":186,"h":298}
+        {"x":178,"y":418,"w":106,"h":22},
+        {"x":319,"y":348,"w":106,"h":22},
+        {"x":477,"y":278,"w":116,"h":22},
+        {"x":654,"y":32,"w":36,"h":290}
       ],
       switches: [
-        {"id":"sw1","x":517,"y":162,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":507,"y":266,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":662,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":654,"y":322,"w":36,"h":186,"currentY":322,"targetY":322,"openY":150,"closedY":322}
       ]
     },
     {
       id: 142,
       name: "Hyper-Pillar Gauntlet",
       hint: "Navigate the hyper-pillars by dropping shells onto the pressure plates in mid-flight!",
-      spawn: {"x":70,"y":234},
-      exit: {"x":850,"y":234,"w":40,"h":54},
+      spawn: {"x":70,"y":280},
+      exit: {"x":840,"y":276,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":294,"w":236,"h":214},
-        {"x":436,"y":356,"w":120,"h":152},
-        {"x":698,"y":294,"w":230,"h":214},
-        {"x":698,"y":32,"w":36,"h":140}
+        {"x":32,"y":330,"w":202,"h":178},
+        {"x":420,"y":410,"w":112,"h":98},
+        {"x":581,"y":420,"w":60,"h":88},
+        {"x":661,"y":330,"w":267,"h":178},
+        {"x":721,"y":32,"w":36,"h":198}
       ],
       switches: [
-        {"id":"sw1","x":461,"y":344,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":445,"y":398,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":698,"y":194,"w":36,"h":100,"currentY":194,"targetY":194,"openY":30,"closedY":194}
+        {"id":"gate1","switchId":"sw1","x":721,"y":230,"w":36,"h":100,"currentY":230,"targetY":230,"openY":90,"closedY":230}
       ]
     },
     {
       id: 143,
       name: "Sub-Nanocore Crawl",
       hint: "Shed both shells to achieve sub-atomic dimensions and navigate the 24px nano-chambers!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":60,"y":440},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":100,"y":434,"w":75,"h":74},
-        {"x":180,"y":32,"w":260,"h":440},
-        {"x":676,"y":32,"w":36,"h":320}
+        {"x":130,"y":440,"w":70,"h":68},
+        {"x":240,"y":32,"w":298,"h":416},
+        {"x":680,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":480,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":350,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":676,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
+        {"id":"gate1","switchId":"sw1","x":680,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
@@ -4398,48 +4463,50 @@
       name: "Quantum Mirror Chamber",
       hint: "Ceiling mirrors the floor: bounce off mid-air shells to reach the isolated center quantum node, weigh the reflection pad, and penetrate the inverted flux gate!",
       spawn: {"x":60,"y":440},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":212,"y":390,"w":50,"h":118},
-        {"x":390,"y":32,"w":50,"h":280},
-        {"x":552,"y":340,"w":50,"h":168},
-        {"x":740,"y":32,"w":36,"h":310}
+        {"x":164,"y":450,"w":60,"h":58},
+        {"x":239,"y":400,"w":50,"h":108},
+        {"x":314,"y":420,"w":60,"h":88},
+        {"x":389,"y":360,"w":50,"h":148},
+        {"x":705,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":555,"y":328,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":392,"y":348,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":740,"y":342,"w":36,"h":166,"currentY":342,"targetY":342,"openY":160,"closedY":342}
+        {"id":"gate1","switchId":"sw1","x":705,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 145,
       name: "Skyward Monolith",
       hint: "A colossal monolith pierces the heavens: eject shells against the wall to reach the summit, trigger the ancient apex keystone, and descend into the exit chamber!",
-      spawn: {"x":70,"y":361},
-      exit: {"x":850,"y":200,"w":40,"h":54},
+      spawn: {"x":70,"y":395},
+      exit: {"x":820,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":421,"w":110,"h":24},
-        {"x":254,"y":298,"w":140,"h":22},
-        {"x":348,"y":302,"w":140,"h":22},
-        {"x":554,"y":308,"w":150,"h":22},
-        {"x":648,"y":208,"w":140,"h":22},
-        {"x":762,"y":32,"w":36,"h":210},
-        {"x":796,"y":260,"w":132,"h":24}
+        {"x":32,"y":440,"w":134,"h":68},
+        {"x":186,"y":380,"w":100,"h":128},
+        {"x":306,"y":320,"w":110,"h":188},
+        {"x":436,"y":260,"w":100,"h":248},
+        {"x":556,"y":200,"w":154,"h":308},
+        {"x":710,"y":32,"w":36,"h":68},
+        {"x":710,"y":200,"w":36,"h":308},
+        {"x":746,"y":200,"w":182,"h":308}
       ],
       switches: [
-        {"id":"sw1","x":582,"y":296,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":336,"y":308,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":762,"y":242,"w":36,"h":120,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":710,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     },
     {
@@ -4447,72 +4514,70 @@
       name: "Paradox Gateway",
       hint: "Both paradox keys must be depressed together! Weigh down Paradox 1, leap across, and weigh Paradox 2.",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":180,"w":40,"h":54},
+      exit: {"x":830,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":248,"y":230,"w":44,"h":278},
-        {"x":248,"y":32,"w":44,"h":80},
-        {"x":532,"y":230,"w":44,"h":278},
-        {"x":532,"y":32,"w":44,"h":80},
-        {"x":686,"y":32,"w":36,"h":210},
-        {"x":724,"y":240,"w":204,"h":268}
+        {"x":293,"y":32,"w":36,"h":320},
+        {"x":368,"y":450,"w":70,"h":58},
+        {"x":458,"y":390,"w":85,"h":118},
+        {"x":573,"y":32,"w":36,"h":320}
       ],
       switches: [
-        {"id":"sw1","x":374,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":160,"y":496,"w":44,"h":12,"pressed":false},
+        {"id":"sw2","x":478,"y":378,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":686,"y":242,"w":36,"h":100,"currentY":242,"targetY":242,"openY":100,"closedY":242}
+        {"id":"gate1","switchId":"sw1","x":293,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352},
+        {"id":"gate2","switchId":"sw2","x":573,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 147,
       name: "The Astral Causeway",
       hint: "High-altitude causeway with floating stepping platforms! Keep your double-jumps steady.",
-      spawn: {"x":80,"y":158},
-      exit: {"x":860,"y":440,"w":40,"h":54},
+      spawn: {"x":80,"y":195},
+      exit: {"x":840,"y":454,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":228,"w":350,"h":28},
-        {"x":480,"y":228,"w":448,"h":28},
-        {"x":690,"y":302,"w":40,"h":206}
+        {"x":32,"y":240,"w":355,"h":28},
+        {"x":497,"y":240,"w":431,"h":28},
+        {"x":680,"y":268,"w":36,"h":84}
       ],
       switches: [
-        {"id":"sw1","x":240,"y":216,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":200,"y":228,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":690,"y":220,"w":40,"h":100,"currentY":220,"targetY":220,"openY":100,"closedY":220}
+        {"id":"gate1","switchId":"sw1","x":680,"y":352,"w":36,"h":156,"currentY":352,"targetY":352,"openY":180,"closedY":352}
       ]
     },
     {
       id: 148,
       name: "Citadel of Echoes",
       hint: "A sonic resonance citadel: leap between the suspended acoustic baffles, place a shell on the resonance dish at the bottom of the well, and open the high rostrum portal!",
-      spawn: {"x":460,"y":440},
-      exit: {"x":460,"y":166,"w":40,"h":54},
+      spawn: {"x":480,"y":440},
+      exit: {"x":480,"y":206,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":152,"y":354,"w":130,"h":24},
-        {"x":696,"y":354,"w":130,"h":24},
-        {"x":398,"y":226,"w":160,"h":24},
-        {"x":368,"y":32,"w":36,"h":190},
-        {"x":558,"y":32,"w":36,"h":190}
+        {"x":230,"y":440,"w":60,"h":68},
+        {"x":70,"y":380,"w":140,"h":24},
+        {"x":250,"y":320,"w":80,"h":24},
+        {"x":390,"y":260,"w":180,"h":24},
+        {"x":360,"y":32,"w":30,"h":140}
       ],
       switches: [
-        {"id":"sw1","x":187,"y":342,"w":44,"h":12,"pressed":false},
-        {"id":"sw2","x":731,"y":342,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":110,"y":368,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":368,"y":228,"w":36,"h":80,"currentY":228,"targetY":228,"openY":100,"closedY":228},
-        {"id":"gate2","switchId":"sw2","x":558,"y":228,"w":36,"h":80,"currentY":228,"targetY":228,"openY":100,"closedY":228}
+        {"id":"gate1","switchId":"sw1","x":360,"y":172,"w":30,"h":88,"currentY":172,"targetY":172,"openY":80,"closedY":172}
       ]
     },
     {
@@ -4520,44 +4585,49 @@
       name: "The Penultimate Ascent",
       hint: "The master trial before the finale! Synchronize switch placement, crawl navigation, and the great climb.",
       spawn: {"x":70,"y":440},
-      exit: {"x":840,"y":258,"w":40,"h":54},
+      exit: {"x":820,"y":246,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":146,"y":318,"w":604,"h":28},
-        {"x":418,"y":346,"w":44,"h":162},
-        {"x":804,"y":318,"w":124,"h":190}
+        {"x":120,"y":300,"w":580,"h":28},
+        {"x":486,"y":440,"w":70,"h":68},
+        {"x":566,"y":370,"w":70,"h":138},
+        {"x":700,"y":32,"w":30,"h":168},
+        {"x":730,"y":300,"w":198,"h":208}
       ],
       switches: [
-        {"id":"sw1","x":458,"y":496,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":330,"y":496,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":774,"y":148,"w":36,"h":170,"currentY":148,"targetY":148,"openY":-20,"closedY":148}
+        {"id":"gate1","switchId":"sw1","x":700,"y":200,"w":30,"h":100,"currentY":200,"targetY":200,"openY":60,"closedY":200}
       ]
     },
     {
       id: 150,
       name: "The Infinity Apex (Sesquicentennial Finale)",
       hint: "THE ULTIMATE 150TH TRIAL! Eject down to penetrate the Sub-Pylon vault, weigh the Dual Infinity Plates, leap across the Celestial Spires, and claim the Infinity Throne!",
-      spawn: {"x":70,"y":440},
-      exit: {"x":80,"y":126,"w":40,"h":54},
+      spawn: {"x":70,"y":375},
+      exit: {"x":800,"y":146,"w":40,"h":54},
       solids: [
         {"x":0,"y":0,"w":960,"h":32},
         {"x":0,"y":508,"w":960,"h":32},
         {"x":0,"y":0,"w":32,"h":540},
         {"x":928,"y":0,"w":32,"h":540},
-        {"x":32,"y":416,"w":724,"h":24},
-        {"x":196,"y":214,"w":732,"h":24},
-        {"x":32,"y":186,"w":258,"h":24},
-        {"x":300,"y":32,"w":36,"h":120}
+        {"x":32,"y":420,"w":700,"h":24},
+        {"x":750,"y":450,"w":60,"h":58},
+        {"x":830,"y":370,"w":98,"h":24},
+        {"x":190,"y":310,"w":620,"h":24},
+        {"x":110,"y":250,"w":60,"h":24},
+        {"x":190,"y":200,"w":738,"h":24},
+        {"x":640,"y":32,"w":36,"h":68}
       ],
       switches: [
-        {"id":"sw1","x":820,"y":202,"w":44,"h":12,"pressed":false}
+        {"id":"sw1","x":440,"y":298,"w":44,"h":12,"pressed":false}
       ],
       doors: [
-        {"id":"gate1","switchId":"sw1","x":300,"y":152,"w":36,"h":100,"currentY":152,"targetY":152,"openY":260,"closedY":152}
+        {"id":"gate1","switchId":"sw1","x":640,"y":100,"w":36,"h":100,"currentY":100,"targetY":100,"openY":-10,"closedY":100}
       ]
     }
   ];
